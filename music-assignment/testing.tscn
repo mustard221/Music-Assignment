@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm5vhum1wbmu6"]
+
+[ext_resource type="Script" path="res://button_1.gd" id="1_gwibb"]
+[ext_resource type="AudioStream" uid="uid://buxq5i23dkq38" path="res://addons/kenney_interface_sounds/click_001.wav" id="2_3g56b"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(2, 0)
+
+[node name="Button 1" type="Button" parent="."]
+offset_left = 136.0
+offset_top = 62.0
+offset_right = 225.0
+offset_bottom = 155.0
+script = ExtResource("1_gwibb")
+metadata/_edit_use_anchors_ = true
+
+[node name="click" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(179, 112)
+stream = ExtResource("2_3g56b")
+
+[connection signal="mouse_entered" from="Button 1" to="Button 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Button 1" to="Button 1" method="_on_pressed"]
