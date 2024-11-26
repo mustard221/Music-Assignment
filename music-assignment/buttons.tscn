@@ -5,203 +5,203 @@
 [node name="Node2D" type="Node2D"]
 position = Vector2(2, 0)
 
-[node name="Button 1" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 50.0
-offset_right = 446.0
-offset_bottom = 143.0
+[node name="Beat 1" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 140.0
+offset_right = 447.0
+offset_bottom = 233.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 2" type="Button" parent="."]
-offset_left = 672.0
-offset_top = 48.0
-offset_right = 761.0
-offset_bottom = 141.0
+[node name="Beat 2" type="Button" parent="."]
+offset_left = 359.0
+offset_top = 240.0
+offset_right = 448.0
+offset_bottom = 333.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 3" type="Button" parent="."]
-offset_left = 569.0
-offset_top = 48.0
-offset_right = 658.0
-offset_bottom = 141.0
+[node name="Beat 3" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 341.0
+offset_right = 447.0
+offset_bottom = 434.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 4" type="Button" parent="."]
-offset_left = 462.0
-offset_top = 49.0
-offset_right = 551.0
-offset_bottom = 142.0
+[node name="Beat 4" type="Button" parent="."]
+offset_left = 359.0
+offset_top = 441.0
+offset_right = 448.0
+offset_bottom = 534.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 5" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 162.0
-offset_right = 446.0
-offset_bottom = 255.0
+[node name="Beat 5" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 542.0
+offset_right = 447.0
+offset_bottom = 635.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 6" type="Button" parent="."]
-offset_left = 672.0
-offset_top = 160.0
-offset_right = 761.0
-offset_bottom = 253.0
+[node name="Bass 1" type="Button" parent="."]
+offset_left = 463.0
+offset_top = 139.0
+offset_right = 552.0
+offset_bottom = 232.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 7" type="Button" parent="."]
-offset_left = 569.0
-offset_top = 160.0
-offset_right = 658.0
-offset_bottom = 253.0
+[node name="Bass 2" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 239.0
+offset_right = 553.0
+offset_bottom = 332.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 8" type="Button" parent="."]
-offset_left = 462.0
-offset_top = 161.0
-offset_right = 551.0
-offset_bottom = 254.0
+[node name="Bass 3" type="Button" parent="."]
+offset_left = 463.0
+offset_top = 340.0
+offset_right = 552.0
+offset_bottom = 433.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 9" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 275.0
-offset_right = 446.0
-offset_bottom = 368.0
+[node name="Bass 4" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 440.0
+offset_right = 553.0
+offset_bottom = 533.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 10" type="Button" parent="."]
-offset_left = 672.0
-offset_top = 273.0
-offset_right = 761.0
-offset_bottom = 366.0
+[node name="Bass 5" type="Button" parent="."]
+offset_left = 463.0
+offset_top = 541.0
+offset_right = 552.0
+offset_bottom = 634.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 11" type="Button" parent="."]
-offset_left = 569.0
-offset_top = 273.0
-offset_right = 658.0
-offset_bottom = 366.0
+[node name="Synth 1" type="Button" parent="."]
+offset_left = 570.0
+offset_top = 138.0
+offset_right = 659.0
+offset_bottom = 231.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 12" type="Button" parent="."]
-offset_left = 462.0
-offset_top = 274.0
-offset_right = 551.0
-offset_bottom = 367.0
+[node name="Synth 2" type="Button" parent="."]
+offset_left = 571.0
+offset_top = 238.0
+offset_right = 660.0
+offset_bottom = 331.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 13" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 383.0
-offset_right = 446.0
-offset_bottom = 476.0
+[node name="Synth 3" type="Button" parent="."]
+offset_left = 570.0
+offset_top = 339.0
+offset_right = 659.0
+offset_bottom = 432.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 14" type="Button" parent="."]
-offset_left = 672.0
-offset_top = 381.0
-offset_right = 761.0
-offset_bottom = 474.0
+[node name="Synth 4" type="Button" parent="."]
+offset_left = 571.0
+offset_top = 439.0
+offset_right = 660.0
+offset_bottom = 532.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 15" type="Button" parent="."]
-offset_left = 569.0
-offset_top = 381.0
-offset_right = 658.0
-offset_bottom = 474.0
+[node name="Synth 5" type="Button" parent="."]
+offset_left = 570.0
+offset_top = 540.0
+offset_right = 659.0
+offset_bottom = 633.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 16" type="Button" parent="."]
-offset_left = 462.0
-offset_top = 382.0
-offset_right = 551.0
-offset_bottom = 475.0
+[node name="Lead 1" type="Button" parent="."]
+offset_left = 673.0
+offset_top = 138.0
+offset_right = 762.0
+offset_bottom = 231.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 17" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 495.0
-offset_right = 446.0
-offset_bottom = 588.0
+[node name="Lead 2" type="Button" parent="."]
+offset_left = 674.0
+offset_top = 238.0
+offset_right = 763.0
+offset_bottom = 331.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 18" type="Button" parent="."]
-offset_left = 672.0
-offset_top = 493.0
-offset_right = 761.0
-offset_bottom = 586.0
+[node name="Lead 3" type="Button" parent="."]
+offset_left = 673.0
+offset_top = 339.0
+offset_right = 762.0
+offset_bottom = 432.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 19" type="Button" parent="."]
-offset_left = 569.0
-offset_top = 493.0
-offset_right = 658.0
-offset_bottom = 586.0
+[node name="Lead 4" type="Button" parent="."]
+offset_left = 674.0
+offset_top = 439.0
+offset_right = 763.0
+offset_bottom = 532.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button 20" type="Button" parent="."]
-offset_left = 462.0
-offset_top = 494.0
-offset_right = 551.0
-offset_bottom = 587.0
+[node name="Lead 5" type="Button" parent="."]
+offset_left = 673.0
+offset_top = 540.0
+offset_right = 762.0
+offset_bottom = 633.0
 script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="mouse_entered" from="Button 1" to="Button 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 1" to="Button 1" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 2" to="Button 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 2" to="Button 2" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 3" to="Button 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 3" to="Button 3" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 4" to="Button 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 4" to="Button 4" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 5" to="Button 5" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 5" to="Button 5" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 6" to="Button 6" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 6" to="Button 6" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 7" to="Button 7" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 7" to="Button 7" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 8" to="Button 8" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 8" to="Button 8" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 9" to="Button 9" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 9" to="Button 9" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 10" to="Button 10" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 10" to="Button 10" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 11" to="Button 11" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 11" to="Button 11" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 12" to="Button 12" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 12" to="Button 12" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 13" to="Button 13" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 13" to="Button 13" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 14" to="Button 14" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 14" to="Button 14" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 15" to="Button 15" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 15" to="Button 15" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 16" to="Button 16" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 16" to="Button 16" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 17" to="Button 17" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 17" to="Button 17" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 18" to="Button 18" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 18" to="Button 18" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 19" to="Button 19" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 19" to="Button 19" method="_on_pressed"]
-[connection signal="mouse_entered" from="Button 20" to="Button 20" method="_on_mouse_entered"]
-[connection signal="pressed" from="Button 20" to="Button 20" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 2" to="Beat 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 2" to="Beat 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 3" to="Beat 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 3" to="Beat 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 4" to="Beat 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 4" to="Beat 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 5" to="Beat 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 5" to="Beat 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 1" to="Bass 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 1" to="Bass 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 2" to="Bass 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 2" to="Bass 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 3" to="Bass 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 3" to="Bass 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 4" to="Bass 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 4" to="Bass 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 5" to="Bass 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 5" to="Bass 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 1" to="Synth 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 1" to="Synth 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 2" to="Synth 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 2" to="Synth 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 3" to="Synth 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 3" to="Synth 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 4" to="Synth 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 4" to="Synth 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 5" to="Synth 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 5" to="Synth 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 1" to="Lead 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 1" to="Lead 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 2" to="Lead 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 2" to="Lead 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 3" to="Lead 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 3" to="Lead 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 4" to="Lead 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 4" to="Lead 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 5" to="Lead 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 5" to="Lead 5" method="_on_pressed"]
