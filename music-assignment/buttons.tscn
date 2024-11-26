@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://ca1lpyu52fkwq"]
-
-[ext_resource type="Script" path="res://button_1.gd" id="1_2kgce"]
+[gd_scene format=3 uid="uid://ca1lpyu52fkwq"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(2, 0)
@@ -10,7 +8,6 @@ offset_left = 358.0
 offset_top = 140.0
 offset_right = 447.0
 offset_bottom = 233.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Beat 2" type="Button" parent="."]
@@ -18,7 +15,6 @@ offset_left = 359.0
 offset_top = 240.0
 offset_right = 448.0
 offset_bottom = 333.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Beat 3" type="Button" parent="."]
@@ -26,7 +22,6 @@ offset_left = 358.0
 offset_top = 341.0
 offset_right = 447.0
 offset_bottom = 434.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Beat 4" type="Button" parent="."]
@@ -34,7 +29,6 @@ offset_left = 359.0
 offset_top = 441.0
 offset_right = 448.0
 offset_bottom = 534.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Beat 5" type="Button" parent="."]
@@ -42,7 +36,6 @@ offset_left = 358.0
 offset_top = 542.0
 offset_right = 447.0
 offset_bottom = 635.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Bass 1" type="Button" parent="."]
@@ -50,7 +43,6 @@ offset_left = 463.0
 offset_top = 139.0
 offset_right = 552.0
 offset_bottom = 232.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Bass 2" type="Button" parent="."]
@@ -58,7 +50,6 @@ offset_left = 464.0
 offset_top = 239.0
 offset_right = 553.0
 offset_bottom = 332.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Bass 3" type="Button" parent="."]
@@ -66,7 +57,6 @@ offset_left = 463.0
 offset_top = 340.0
 offset_right = 552.0
 offset_bottom = 433.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Bass 4" type="Button" parent="."]
@@ -74,7 +64,6 @@ offset_left = 464.0
 offset_top = 440.0
 offset_right = 553.0
 offset_bottom = 533.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Bass 5" type="Button" parent="."]
@@ -82,7 +71,6 @@ offset_left = 463.0
 offset_top = 541.0
 offset_right = 552.0
 offset_bottom = 634.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Synth 1" type="Button" parent="."]
@@ -90,7 +78,6 @@ offset_left = 570.0
 offset_top = 138.0
 offset_right = 659.0
 offset_bottom = 231.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Synth 2" type="Button" parent="."]
@@ -98,7 +85,6 @@ offset_left = 571.0
 offset_top = 238.0
 offset_right = 660.0
 offset_bottom = 331.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Synth 3" type="Button" parent="."]
@@ -106,7 +92,6 @@ offset_left = 570.0
 offset_top = 339.0
 offset_right = 659.0
 offset_bottom = 432.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Synth 4" type="Button" parent="."]
@@ -114,7 +99,6 @@ offset_left = 571.0
 offset_top = 439.0
 offset_right = 660.0
 offset_bottom = 532.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Synth 5" type="Button" parent="."]
@@ -122,7 +106,6 @@ offset_left = 570.0
 offset_top = 540.0
 offset_right = 659.0
 offset_bottom = 633.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Lead 1" type="Button" parent="."]
@@ -130,7 +113,6 @@ offset_left = 673.0
 offset_top = 138.0
 offset_right = 762.0
 offset_bottom = 231.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Lead 2" type="Button" parent="."]
@@ -138,7 +120,6 @@ offset_left = 674.0
 offset_top = 238.0
 offset_right = 763.0
 offset_bottom = 331.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Lead 3" type="Button" parent="."]
@@ -146,7 +127,6 @@ offset_left = 673.0
 offset_top = 339.0
 offset_right = 762.0
 offset_bottom = 432.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Lead 4" type="Button" parent="."]
@@ -154,7 +134,6 @@ offset_left = 674.0
 offset_top = 439.0
 offset_right = 763.0
 offset_bottom = 532.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [node name="Lead 5" type="Button" parent="."]
@@ -162,7 +141,6 @@ offset_left = 673.0
 offset_top = 540.0
 offset_right = 762.0
 offset_bottom = 633.0
-script = ExtResource("1_2kgce")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
