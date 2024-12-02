@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://8we6pi6x1fm0"]
+[gd_scene load_steps=7 format=3 uid="uid://8we6pi6x1fm0"]
 
-[ext_resource type="Texture2D" uid="uid://cweg38680p7gd" path="res://test-stuff/icon-test.png" id="1_jwmga"]
+[ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="1_qo37n"]
 [ext_resource type="AudioStream" uid="uid://buxq5i23dkq38" path="res://addons/kenney_interface_sounds/click_001.wav" id="2_0xnhp"]
 [ext_resource type="Script" path="res://test-stuff/button-test.gd" id="2_a6653"]
+[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="2_vw0ps"]
+[ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="3_l0rhr"]
+[ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="4_kkh3e"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -11,7 +14,10 @@ offset_left = 427.0
 offset_top = 246.0
 offset_right = 529.0
 offset_bottom = 346.0
-texture_normal = ExtResource("1_jwmga")
+texture_normal = ExtResource("1_qo37n")
+texture_pressed = ExtResource("2_vw0ps")
+texture_hover = ExtResource("3_l0rhr")
+texture_disabled = ExtResource("4_kkh3e")
 script = ExtResource("2_a6653")
 
 [node name="Click001" type="AudioStreamPlayer" parent="."]

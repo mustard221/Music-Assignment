@@ -1,18 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2jhg4ddhwaqk"]
+[gd_scene load_steps=5 format=3 uid="uid://c2jhg4ddhwaqk"]
 
 [ext_resource type="Script" path="res://start screen/start-button.gd" id="1_fs74i"]
+[ext_resource type="Texture2D" uid="uid://cessotqvsmpse" path="res://assets/play-unpressed.png" id="2_nyukk"]
+[ext_resource type="Texture2D" uid="uid://c2bv0bvtj0li1" path="res://assets/play-pressed.png" id="3_eunc2"]
+[ext_resource type="Texture2D" uid="uid://8574a6ekrdp6" path="res://assets/play-unpressed-hov.png" id="4_n2hcl"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_fs74i")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 503.0
-offset_top = 311.0
-offset_right = 638.0
-offset_bottom = 378.0
-text = "Start"
+offset_left = 459.0
+offset_top = 342.0
+offset_right = 669.0
+offset_bottom = 452.0
+texture_normal = ExtResource("2_nyukk")
+texture_pressed = ExtResource("3_eunc2")
+texture_hover = ExtResource("4_n2hcl")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
