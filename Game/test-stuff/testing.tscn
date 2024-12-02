@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://8we6pi6x1fm0"]
 
 [ext_resource type="Texture2D" uid="uid://cweg38680p7gd" path="res://test-stuff/icon-test.png" id="1_jwmga"]
-[ext_resource type="Script" path="res://test-stuff/button_test.gd" id="1_xcqw6"]
 [ext_resource type="AudioStream" uid="uid://buxq5i23dkq38" path="res://addons/kenney_interface_sounds/click_001.wav" id="2_0xnhp"]
+[ext_resource type="Script" path="res://test-stuff/button-test.gd" id="2_a6653"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,7 +12,7 @@ offset_top = 246.0
 offset_right = 529.0
 offset_bottom = 346.0
 texture_normal = ExtResource("1_jwmga")
-script = ExtResource("1_xcqw6")
+script = ExtResource("2_a6653")
 
 [node name="Click001" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_0xnhp")
