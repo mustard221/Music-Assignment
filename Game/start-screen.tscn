@@ -1,13 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2714wme7fy07"]
+[gd_scene load_steps=2 format=3 uid="uid://c16kq7ijidlms"]
 
-[ext_resource type="Script" path="res://start_button.gd" id="1_63ohd"]
+[ext_resource type="Script" path="res://start-button.gd" id="1_i1t8b"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_63ohd")
+script = ExtResource("1_i1t8b")
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 503.0
 offset_top = 311.0
 offset_right = 638.0

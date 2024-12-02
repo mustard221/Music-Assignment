@@ -1,0 +1,222 @@
+[gd_scene load_steps=5 format=3 uid="uid://dloieo6trxah0"]
+
+[ext_resource type="Texture2D" uid="uid://cweg38680p7gd" path="res://test-stuff/icon-test.png" id="1_u83fl"]
+[ext_resource type="Texture2D" uid="uid://3q1y7g1u54fj" path="res://test-stuff/icon-test2.png" id="2_sa447"]
+[ext_resource type="Texture2D" uid="uid://bjwew5yvn7gff" path="res://test-stuff/icon-test3.png" id="3_fff8n"]
+[ext_resource type="Texture2D" uid="uid://doji6jhtpsa5i" path="res://test-stuff/icon-test4.png" id="4_8opju"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(2, 0)
+
+[node name="Beat 1" type="TextureButton" parent="."]
+offset_left = 353.0
+offset_top = 108.0
+offset_right = 453.0
+offset_bottom = 208.0
+texture_normal = ExtResource("1_u83fl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beat 2" type="TextureButton" parent="."]
+offset_left = 353.0
+offset_top = 214.0
+offset_right = 453.0
+offset_bottom = 314.0
+texture_normal = ExtResource("1_u83fl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beat 3" type="TextureButton" parent="."]
+offset_left = 355.0
+offset_top = 322.0
+offset_right = 455.0
+offset_bottom = 422.0
+texture_normal = ExtResource("1_u83fl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beat 4" type="TextureButton" parent="."]
+offset_left = 354.0
+offset_top = 430.0
+offset_right = 454.0
+offset_bottom = 530.0
+texture_normal = ExtResource("1_u83fl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beat 5" type="TextureButton" parent="."]
+offset_left = 355.0
+offset_top = 538.0
+offset_right = 455.0
+offset_bottom = 638.0
+texture_normal = ExtResource("1_u83fl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bass 1" type="TextureButton" parent="."]
+offset_left = 462.0
+offset_top = 108.0
+offset_right = 562.0
+offset_bottom = 208.0
+texture_normal = ExtResource("2_sa447")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bass 2" type="TextureButton" parent="."]
+offset_left = 461.0
+offset_top = 215.0
+offset_right = 561.0
+offset_bottom = 315.0
+texture_normal = ExtResource("2_sa447")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bass 3" type="TextureButton" parent="."]
+offset_left = 463.0
+offset_top = 322.0
+offset_right = 563.0
+offset_bottom = 422.0
+texture_normal = ExtResource("2_sa447")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bass 4" type="TextureButton" parent="."]
+offset_left = 462.0
+offset_top = 430.0
+offset_right = 562.0
+offset_bottom = 530.0
+texture_normal = ExtResource("2_sa447")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bass 5" type="TextureButton" parent="."]
+offset_left = 461.0
+offset_top = 539.0
+offset_right = 561.0
+offset_bottom = 639.0
+texture_normal = ExtResource("2_sa447")
+metadata/_edit_use_anchors_ = true
+
+[node name="Synth 1" type="TextureButton" parent="."]
+offset_left = 570.0
+offset_top = 108.0
+offset_right = 670.0
+offset_bottom = 208.0
+texture_normal = ExtResource("3_fff8n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Synth 2" type="TextureButton" parent="."]
+offset_left = 569.0
+offset_top = 215.0
+offset_right = 669.0
+offset_bottom = 315.0
+texture_normal = ExtResource("3_fff8n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Synth 3" type="TextureButton" parent="."]
+offset_left = 570.0
+offset_top = 320.0
+offset_right = 670.0
+offset_bottom = 420.0
+texture_normal = ExtResource("3_fff8n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Synth 4" type="TextureButton" parent="."]
+offset_left = 570.0
+offset_top = 427.0
+offset_right = 670.0
+offset_bottom = 527.0
+texture_normal = ExtResource("3_fff8n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Synth 5" type="TextureButton" parent="."]
+offset_left = 569.0
+offset_top = 536.0
+offset_right = 669.0
+offset_bottom = 636.0
+texture_normal = ExtResource("3_fff8n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lead 1" type="TextureButton" parent="."]
+offset_left = 678.0
+offset_top = 109.0
+offset_right = 778.0
+offset_bottom = 209.0
+texture_normal = ExtResource("4_8opju")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lead 2" type="TextureButton" parent="."]
+offset_left = 677.0
+offset_top = 214.0
+offset_right = 777.0
+offset_bottom = 314.0
+texture_normal = ExtResource("4_8opju")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lead 3" type="TextureButton" parent="."]
+offset_left = 678.0
+offset_top = 319.0
+offset_right = 778.0
+offset_bottom = 419.0
+texture_normal = ExtResource("4_8opju")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lead 4" type="TextureButton" parent="."]
+offset_left = 677.0
+offset_top = 426.0
+offset_right = 777.0
+offset_bottom = 526.0
+texture_normal = ExtResource("4_8opju")
+metadata/_edit_use_anchors_ = true
+
+[node name="Lead 5" type="TextureButton" parent="."]
+offset_left = 678.0
+offset_top = 534.0
+offset_right = 778.0
+offset_bottom = 634.0
+texture_normal = ExtResource("4_8opju")
+metadata/_edit_use_anchors_ = true
+
+[node name="VSlider" type="VSlider" parent="."]
+offset_left = 811.0
+offset_top = 122.0
+offset_right = 855.0
+offset_bottom = 602.0
+
+[node name="VSlider2" type="VSlider" parent="."]
+offset_left = 864.0
+offset_top = 123.0
+offset_right = 880.0
+offset_bottom = 603.0
+
+[connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 2" to="Beat 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 2" to="Beat 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 3" to="Beat 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 3" to="Beat 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 4" to="Beat 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 4" to="Beat 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Beat 5" to="Beat 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Beat 5" to="Beat 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 1" to="Bass 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 1" to="Bass 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 2" to="Bass 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 2" to="Bass 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 3" to="Bass 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 3" to="Bass 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 4" to="Bass 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 4" to="Bass 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Bass 5" to="Bass 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Bass 5" to="Bass 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 1" to="Synth 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 1" to="Synth 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 2" to="Synth 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 2" to="Synth 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 3" to="Synth 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 3" to="Synth 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 4" to="Synth 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 4" to="Synth 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Synth 5" to="Synth 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Synth 5" to="Synth 5" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 1" to="Lead 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 1" to="Lead 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 2" to="Lead 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 2" to="Lead 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 3" to="Lead 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 3" to="Lead 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 4" to="Lead 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 4" to="Lead 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="Lead 5" to="Lead 5" method="_on_mouse_entered"]
+[connection signal="pressed" from="Lead 5" to="Lead 5" method="_on_pressed"]
