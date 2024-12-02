@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2714wme7fy07"]
+
+[ext_resource type="Script" path="res://start_button.gd" id="1_63ohd"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_63ohd")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 503.0
+offset_top = 311.0
+offset_right = 638.0
+offset_bottom = 378.0
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

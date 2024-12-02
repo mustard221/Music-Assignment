@@ -168,6 +168,18 @@ offset_bottom = 634.0
 texture_normal = ExtResource("4_im0jf")
 metadata/_edit_use_anchors_ = true
 
+[node name="VSlider" type="VSlider" parent="."]
+offset_left = 811.0
+offset_top = 122.0
+offset_right = 855.0
+offset_bottom = 602.0
+
+[node name="VSlider2" type="VSlider" parent="."]
+offset_left = 864.0
+offset_top = 123.0
+offset_right = 880.0
+offset_bottom = 603.0
+
 [connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
 [connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
 [connection signal="mouse_entered" from="Beat 2" to="Beat 2" method="_on_mouse_entered"]
