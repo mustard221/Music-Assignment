@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://8we6pi6x1fm0"]
+[gd_scene load_steps=7 format=3 uid="uid://8we6pi6x1fm0"]
 
 [ext_resource type="PackedScene" uid="uid://dge1afwo2m03d" path="res://animations/dancer-animation.tscn" id="1_gdjbp"]
 [ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="1_qo37n"]
-[ext_resource type="AudioStream" uid="uid://buxq5i23dkq38" path="res://addons/kenney_interface_sounds/click_001.wav" id="2_0xnhp"]
 [ext_resource type="Script" path="res://test-stuff/button-test.gd" id="2_a6653"]
 [ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="2_vw0ps"]
 [ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="3_l0rhr"]
@@ -23,9 +22,6 @@ texture_pressed = ExtResource("2_vw0ps")
 texture_hover = ExtResource("3_l0rhr")
 texture_disabled = ExtResource("4_kkh3e")
 script = ExtResource("2_a6653")
-
-[node name="Click001" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_0xnhp")
 
 [node name="VSlider" type="VSlider" parent="."]
 offset_left = 622.0
