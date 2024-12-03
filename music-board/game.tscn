@@ -255,9 +255,9 @@ theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv"
 
 [node name="VSlider2" type="VSlider" parent="."]
 offset_left = 838.0
-offset_top = 137.0
+offset_top = 136.0
 offset_right = 878.0
-offset_bottom = 581.0
+offset_bottom = 582.0
 theme_override_icons/grabber = ExtResource("18_gq6md")
 theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
 theme_override_styles/slider = SubResource("StyleBoxTexture_expg8")

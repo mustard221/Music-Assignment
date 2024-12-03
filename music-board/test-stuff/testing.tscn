@@ -1,20 +1,23 @@
 [gd_scene load_steps=8 format=3 uid="uid://8we6pi6x1fm0"]
 
+[ext_resource type="PackedScene" uid="uid://dge1afwo2m03d" path="res://animations/dancer-animation.tscn" id="1_gdjbp"]
 [ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="1_qo37n"]
 [ext_resource type="AudioStream" uid="uid://buxq5i23dkq38" path="res://addons/kenney_interface_sounds/click_001.wav" id="2_0xnhp"]
 [ext_resource type="Script" path="res://test-stuff/button-test.gd" id="2_a6653"]
 [ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="2_vw0ps"]
 [ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="3_l0rhr"]
 [ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="4_kkh3e"]
-[ext_resource type="Texture2D" uid="uid://be3iw6v4e6ds4" path="res://assets/dancer.png" id="7_b6lwg"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="character" parent="." instance=ExtResource("1_gdjbp")]
+position = Vector2(-104, -65)
+
 [node name="Button" type="TextureButton" parent="."]
-offset_left = 427.0
-offset_top = 246.0
-offset_right = 529.0
-offset_bottom = 346.0
+offset_left = 424.0
+offset_top = 333.0
+offset_right = 534.0
+offset_bottom = 443.0
 texture_normal = ExtResource("1_qo37n")
 texture_pressed = ExtResource("2_vw0ps")
 texture_hover = ExtResource("3_l0rhr")
@@ -24,6 +27,28 @@ script = ExtResource("2_a6653")
 [node name="Click001" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_0xnhp")
 
-[node name="Dancer" type="Sprite2D" parent="."]
-position = Vector2(473, 146)
-texture = ExtResource("7_b6lwg")
+[node name="VSlider" type="VSlider" parent="."]
+offset_left = 622.0
+offset_top = 177.0
+offset_right = 638.0
+offset_bottom = 468.0
+
+[node name="VSlider2" type="VSlider" parent="."]
+offset_left = 695.0
+offset_top = 176.0
+offset_right = 711.0
+offset_bottom = 467.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 598.0
+offset_top = 480.0
+offset_right = 668.0
+offset_bottom = 515.0
+text = "Volume"
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+offset_left = 679.0
+offset_top = 480.0
+offset_right = 729.0
+offset_bottom = 515.0
+text = "Pitch"
