@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dloieo6trxah0"]
+[gd_scene load_steps=30 format=3 uid="uid://dloieo6trxah0"]
 
 [ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="1_jdhkd"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
@@ -17,6 +17,25 @@
 [ext_resource type="Texture2D" uid="uid://1vo6irgx1w10" path="res://assets/lead-pressed.png" id="14_p8vrn"]
 [ext_resource type="Texture2D" uid="uid://djqnqxwerscdh" path="res://assets/lead-unpressed-hov.png" id="15_t1lbp"]
 [ext_resource type="Texture2D" uid="uid://dnhd2v6sog01g" path="res://assets/lead-unpressed-dis.png" id="16_js83k"]
+[ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="18_gq6md"]
+[ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="19_x8p46"]
+[ext_resource type="Texture2D" uid="uid://bcstexbb8uxvu" path="res://assets/slider.png" id="20_ejgw7"]
+[ext_resource type="Texture2D" uid="uid://p2asa6bc0dv2" path="res://assets/volume.png" id="21_hob1n"]
+[ext_resource type="Texture2D" uid="uid://b8qkoe7c56cr2" path="res://assets/pitch.png" id="22_nonon"]
+[ext_resource type="Texture2D" uid="uid://be3iw6v4e6ds4" path="res://assets/dancer.png" id="23_kqecb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr5w4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0gq48"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txarv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_expg8"]
+texture = ExtResource("20_ejgw7")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p4fre"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gq4jn"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(2, 0)
@@ -225,12 +244,40 @@ offset_left = 796.0
 offset_top = 139.0
 offset_right = 840.0
 offset_bottom = 584.0
+theme_override_icons/grabber = ExtResource("18_gq6md")
+theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_gr5w4")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_0gq48")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv")
 
 [node name="VSlider2" type="VSlider" parent="."]
-offset_left = 849.0
+offset_left = 843.0
 offset_top = 140.0
-offset_right = 865.0
+offset_right = 859.0
 offset_bottom = 584.0
+theme_override_icons/grabber = ExtResource("18_gq6md")
+theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
+theme_override_styles/slider = SubResource("StyleBoxTexture_expg8")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_p4fre")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_gq4jn")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 799.0
+offset_top = 585.0
+offset_right = 838.0
+offset_bottom = 618.0
+texture = ExtResource("21_hob1n")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 832.0
+offset_top = 579.0
+offset_right = 883.0
+offset_bottom = 619.0
+texture = ExtResource("22_nonon")
+
+[node name="Dancer" type="Sprite2D" parent="."]
+position = Vector2(537, 84)
+texture = ExtResource("23_kqecb")
 
 [connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
 [connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
