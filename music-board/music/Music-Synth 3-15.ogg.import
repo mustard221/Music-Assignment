@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db0ef6txpwe3m"
+path="res://.godot/imported/Music-Synth 3-15.ogg-09117eef67ee60327b461b917d30408e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Music-Synth 3-15.ogg"
+dest_files=["res://.godot/imported/Music-Synth 3-15.ogg-09117eef67ee60327b461b917d30408e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=-100.0
+bpm=0
+beat_count=0
+bar_beats=3

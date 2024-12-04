@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cei24ilxex4it"
+path="res://.godot/imported/Music-Bass 4-12.ogg-7896a622f0d6493767cb6709dff55a05.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Music-Bass 4-12.ogg"
+dest_files=["res://.godot/imported/Music-Bass 4-12.ogg-7896a622f0d6493767cb6709dff55a05.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=-100.0
+bpm=0
+beat_count=0
+bar_beats=3

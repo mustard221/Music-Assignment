@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dj3pmk6vldues"
+path="res://.godot/imported/Music-Pad 4-8.ogg-e611f4168c1b0ba00d43a68bad4c756a.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Music-Pad 4-8.ogg"
+dest_files=["res://.godot/imported/Music-Pad 4-8.ogg-e611f4168c1b0ba00d43a68bad4c756a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=-100.0
+bpm=0
+beat_count=0
+bar_beats=3

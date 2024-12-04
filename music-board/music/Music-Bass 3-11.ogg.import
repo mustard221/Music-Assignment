@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cyta0a3d4woy0"
+path="res://.godot/imported/Music-Bass 3-11.ogg-a92ae2b87a305cf148eedb1bbddfbe1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Music-Bass 3-11.ogg"
+dest_files=["res://.godot/imported/Music-Bass 3-11.ogg-a92ae2b87a305cf148eedb1bbddfbe1e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=-100.0
+bpm=0
+beat_count=0
+bar_beats=3
