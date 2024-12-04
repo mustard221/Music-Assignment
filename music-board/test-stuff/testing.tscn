@@ -3,15 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://dge1afwo2m03d" path="res://animations/dancer-animation.tscn" id="1_gdjbp"]
 [ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="1_qo37n"]
 [ext_resource type="Script" path="res://test-stuff/button-test.gd" id="2_a6653"]
-[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="2_vw0ps"]
 [ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="3_l0rhr"]
-[ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="4_kkh3e"]
+[ext_resource type="ButtonGroup" uid="uid://dk4qmeekagd0l" path="res://button-group-test.tres" id="3_widl8"]
+[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="5_xwa54"]
 [ext_resource type="AudioStream" uid="uid://c620rsrk0ic1b" path="res://music/Music-Beat 1 -3.ogg" id="7_yojiq"]
 [ext_resource type="Script" path="res://test-stuff/v_slider_2.gd" id="8_2xlge"]
 [ext_resource type="Script" path="res://test-stuff/beat2.gd" id="8_wgccj"]
 [ext_resource type="AudioStream" uid="uid://cy280c1i5xxfj" path="res://music/Music-Beat 2 -4.ogg" id="9_etexk"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("8_2xlge")
 
 [node name="character" parent="." instance=ExtResource("1_gdjbp")]
@@ -20,12 +22,12 @@ position = Vector2(-104, -65)
 [node name="Button" type="TextureButton" parent="."]
 offset_left = 424.0
 offset_top = 333.0
-offset_right = 534.0
-offset_bottom = 443.0
-texture_normal = ExtResource("1_qo37n")
-texture_pressed = ExtResource("2_vw0ps")
-texture_hover = ExtResource("3_l0rhr")
-texture_disabled = ExtResource("4_kkh3e")
+offset_right = 542.0
+offset_bottom = 451.0
+toggle_mode = true
+button_group = ExtResource("3_widl8")
+texture_normal = ExtResource("3_l0rhr")
+texture_pressed = ExtResource("5_xwa54")
 script = ExtResource("2_a6653")
 
 [node name="Music-beat1-3" type="AudioStreamPlayer" parent="Button"]
@@ -62,10 +64,10 @@ offset_left = 424.0
 offset_top = 410.0
 offset_right = 534.0
 offset_bottom = 520.0
+toggle_mode = true
+button_group = ExtResource("3_widl8")
 texture_normal = ExtResource("1_qo37n")
-texture_pressed = ExtResource("2_vw0ps")
-texture_hover = ExtResource("3_l0rhr")
-texture_disabled = ExtResource("4_kkh3e")
+texture_pressed = ExtResource("5_xwa54")
 script = ExtResource("8_wgccj")
 
 [node name="Music-beat2-4" type="AudioStreamPlayer" parent="Button2"]
