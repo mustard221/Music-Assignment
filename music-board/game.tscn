@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://dloieo6trxah0"]
 
-[ext_resource type="PackedScene" path="res://animations/dancer-animation.tscn" id="1_jcpbo"]
+[ext_resource type="PackedScene" uid="uid://b043lhmqjjes0" path="res://animations/dancer_animation.tscn" id="1_2x2i7"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
 [ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="18_gq6md"]
 [ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="19_x8p46"]
@@ -24,8 +24,8 @@ texture = ExtResource("20_ejgw7")
 [node name="Node2D" type="Node2D"]
 position = Vector2(2, 0)
 
-[node name="character" parent="." instance=ExtResource("1_jcpbo")]
-position = Vector2(-39, -247)
+[node name="character" parent="." instance=ExtResource("1_2x2i7")]
+position = Vector2(-42, -245)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 236.0
