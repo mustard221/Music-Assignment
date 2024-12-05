@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Start_Screen.ogg-0502d56a0b63fd7dee506eac4eb0
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

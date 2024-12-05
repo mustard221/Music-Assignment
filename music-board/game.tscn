@@ -1,25 +1,17 @@
-[gd_scene load_steps=14 format=3 uid="uid://dloieo6trxah0"]
+[gd_scene load_steps=10 format=3 uid="uid://dloieo6trxah0"]
 
 [ext_resource type="PackedScene" uid="uid://b043lhmqjjes0" path="res://animations/dancer_animation.tscn" id="1_2x2i7"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
+[ext_resource type="Script" path="res://script/volume_slider.gd" id="5_hmhr5"]
 [ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="18_gq6md"]
 [ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="19_x8p46"]
-[ext_resource type="Texture2D" uid="uid://bcstexbb8uxvu" path="res://assets/slider.png" id="20_ejgw7"]
 [ext_resource type="Texture2D" uid="uid://p2asa6bc0dv2" path="res://assets/volume.png" id="21_hob1n"]
-[ext_resource type="Texture2D" uid="uid://b8qkoe7c56cr2" path="res://assets/pitch.png" id="22_nonon"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr5w4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0gq48"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txarv"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_expg8"]
-texture = ExtResource("20_ejgw7")
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p4fre"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gq4jn"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(2, 0)
@@ -172,17 +164,7 @@ theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
 theme_override_styles/slider = SubResource("StyleBoxEmpty_gr5w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_0gq48")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv")
-
-[node name="VSlider2" type="VSlider" parent="."]
-offset_left = 838.0
-offset_top = 136.0
-offset_right = 878.0
-offset_bottom = 582.0
-theme_override_icons/grabber = ExtResource("18_gq6md")
-theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
-theme_override_styles/slider = SubResource("StyleBoxTexture_expg8")
-theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_p4fre")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_gq4jn")
+script = ExtResource("5_hmhr5")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 offset_left = 799.0
@@ -190,13 +172,6 @@ offset_top = 585.0
 offset_right = 838.0
 offset_bottom = 618.0
 texture = ExtResource("21_hob1n")
-
-[node name="TextureRect3" type="TextureRect" parent="."]
-offset_left = 832.0
-offset_top = 579.0
-offset_right = 883.0
-offset_bottom = 619.0
-texture = ExtResource("22_nonon")
 
 [connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
 [connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
@@ -230,3 +205,4 @@ texture = ExtResource("22_nonon")
 [connection signal="pressed" from="Lead 3" to="Lead 3" method="_on_pressed"]
 [connection signal="mouse_entered" from="Lead 4" to="Lead 4" method="_on_mouse_entered"]
 [connection signal="pressed" from="Lead 4" to="Lead 4" method="_on_pressed"]
+[connection signal="value_changed" from="VSlider" to="VSlider" method="_on_value_changed"]

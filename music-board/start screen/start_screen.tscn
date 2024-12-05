@@ -1,14 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://br48e7aewgrl4"]
+[gd_scene load_steps=6 format=3 uid="uid://br48e7aewgrl4"]
 
-[ext_resource type="Script" path="res://start screen/start-button.gd" id="1_jj5wu"]
 [ext_resource type="Texture2D" uid="uid://cessotqvsmpse" path="res://assets/play-unpressed.png" id="2_jkvdb"]
 [ext_resource type="Texture2D" uid="uid://c2bv0bvtj0li1" path="res://assets/play-pressed.png" id="3_p7cjx"]
 [ext_resource type="Texture2D" uid="uid://8574a6ekrdp6" path="res://assets/play-unpressed-hov.png" id="4_0vm3g"]
+[ext_resource type="AudioStream" uid="uid://d2gn4kdjed5p0" path="res://music/Start_Screen.ogg" id="5_j0eqy"]
+
+[sub_resource type="GDScript" id="GDScript_7tlss"]
+script/source = "extends Control
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://game.tscn\")
+
+	
+func _ready():
+	pass
+"
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_jj5wu")
+script = SubResource("GDScript_7tlss")
 
 [node name="Button" type="TextureButton" parent="."]
 layout_mode = 0
@@ -19,5 +30,9 @@ offset_bottom = 452.0
 texture_normal = ExtResource("2_jkvdb")
 texture_pressed = ExtResource("3_p7cjx")
 texture_hover = ExtResource("4_0vm3g")
+
+[node name="StartScreen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_j0eqy")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
