@@ -1,6 +1,7 @@
-[gd_scene load_steps=59 format=3 uid="uid://dloieo6trxah0"]
+[gd_scene load_steps=64 format=3 uid="uid://dloieo6trxah0"]
 
 [ext_resource type="PackedScene" uid="uid://b043lhmqjjes0" path="res://animations/dancer_animation.tscn" id="1_2x2i7"]
+[ext_resource type="Script" path="res://script/timer_control.gd" id="1_picyf"]
 [ext_resource type="Script" path="res://script/board.gd" id="1_u7c8n"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
 [ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="4_hwumr"]
@@ -16,7 +17,9 @@
 [ext_resource type="AudioStream" uid="uid://cnh8dh2x1atws" path="res://music/Music-Beat 4-1.ogg" id="11_qv67t"]
 [ext_resource type="Script" path="res://script/beat3.gd" id="12_idwuk"]
 [ext_resource type="Texture2D" uid="uid://b1fp6ayulcrkh" path="res://assets/bass-unpressed.png" id="12_ocs8n"]
+[ext_resource type="Texture2D" uid="uid://dfmtehi6ola47" path="res://test-stuff/progressbar-test.png" id="12_v6ngg"]
 [ext_resource type="Texture2D" uid="uid://br7emfip3fgxr" path="res://assets/bass-pressed.png" id="13_uac2f"]
+[ext_resource type="Texture2D" uid="uid://3rnahrj5px4j" path="res://assets/progressbar-fill.png" id="13_v4spy"]
 [ext_resource type="Texture2D" uid="uid://kjwhw1mvq8lb" path="res://assets/bass-unpressed-hov.png" id="14_8jmwx"]
 [ext_resource type="Script" path="res://script/beat4.gd" id="14_an2kt"]
 [ext_resource type="Texture2D" uid="uid://dyw038pw2eca4" path="res://assets/bass-unpressed-dis.png" id="15_23440"]
@@ -56,6 +59,12 @@
 [ext_resource type="Script" path="res://script/pad4.gd" id="50_3jrfr"]
 [ext_resource type="AudioStream" uid="uid://dgq1a2hrhe6cl" path="res://music/Music-Pad-4-8.ogg" id="51_xdpg6"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d83cm"]
+texture = ExtResource("12_v6ngg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpvoa"]
+texture = ExtResource("13_v4spy")
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr5w4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0gq48"]
@@ -67,6 +76,67 @@ layout_mode = 3
 anchors_preset = 0
 offset_left = 2.0
 offset_right = 2.0
+script = ExtResource("1_picyf")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 190.0
+offset_right = 261.0
+offset_bottom = 208.0
+theme_override_styles/background = SubResource("StyleBoxTexture_d83cm")
+theme_override_styles/fill = SubResource("StyleBoxTexture_jpvoa")
+max_value = 6.555
+step = 1.0
+show_percentage = false
+
+[node name="ProgressBar2" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 300.0
+offset_right = 262.0
+offset_bottom = 318.0
+theme_override_styles/background = SubResource("StyleBoxTexture_d83cm")
+theme_override_styles/fill = SubResource("StyleBoxTexture_jpvoa")
+max_value = 6.555
+step = 1.0
+show_percentage = false
+
+[node name="ProgressBar3" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 406.0
+offset_right = 263.0
+offset_bottom = 424.0
+theme_override_styles/background = SubResource("StyleBoxTexture_d83cm")
+theme_override_styles/fill = SubResource("StyleBoxTexture_jpvoa")
+max_value = 6.555
+step = 1.0
+show_percentage = false
+
+[node name="ProgressBar4" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 509.0
+offset_right = 263.0
+offset_bottom = 527.0
+theme_override_styles/background = SubResource("StyleBoxTexture_d83cm")
+theme_override_styles/fill = SubResource("StyleBoxTexture_jpvoa")
+max_value = 6.555
+step = 1.0
+show_percentage = false
+
+[node name="Timer_Beat" type="Timer" parent="."]
+wait_time = 6.555
+
+[node name="Timer_Bass" type="Timer" parent="."]
+wait_time = 6.555
+
+[node name="Timer_Synth" type="Timer" parent="."]
+wait_time = 6.555
+
+[node name="Timer_Pad" type="Timer" parent="."]
+wait_time = 6.555
 
 [node name="character" parent="." instance=ExtResource("1_2x2i7")]
 position = Vector2(-42, -245)
@@ -309,7 +379,7 @@ theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
 theme_override_styles/slider = SubResource("StyleBoxEmpty_gr5w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_0gq48")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv")
-max_value = 10.0
+max_value = 50.0
 script = ExtResource("5_hmhr5")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
@@ -320,52 +390,72 @@ offset_right = 838.0
 offset_bottom = 618.0
 texture = ExtResource("21_hob1n")
 
+[connection signal="ready" from="ProgressBar" to="Timer_Beat" method="_ready"]
+[connection signal="ready" from="ProgressBar2" to="." method="_ready"]
+[connection signal="ready" from="ProgressBar3" to="." method="_ready"]
+[connection signal="ready" from="ProgressBar4" to="." method="_ready"]
 [connection signal="mouse_entered" from="GridContainer/Beat 1" to="GridContainer/Beat 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Beat 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 1" to="." method="_on_beat_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 1" to="Timer_Beat" method="_on_beat_pressed"]
 [connection signal="pressed" from="GridContainer/Beat 1" to="GridContainer/Beat 1" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Beat 2" to="GridContainer/Beat 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Beat 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 2" to="." method="_on_beat_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 2" to="Timer_Beat" method="_on_beat_pressed"]
 [connection signal="pressed" from="GridContainer/Beat 2" to="GridContainer/Beat 2" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Beat 3" to="GridContainer/Beat 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Beat 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 3" to="." method="_on_beat_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 3" to="Timer_Beat" method="_on_beat_pressed"]
 [connection signal="pressed" from="GridContainer/Beat 3" to="GridContainer/Beat 3" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Beat 4" to="GridContainer/Beat 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Beat 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 4" to="." method="_on_beat_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 4" to="Timer_Beat" method="_on_beat_pressed"]
 [connection signal="pressed" from="GridContainer/Beat 4" to="GridContainer/Beat 4" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Bass 1" to="GridContainer/Bass 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Bass 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 1" to="." method="_on_bass_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 1" to="Timer_Bass" method="_on_bass_pressed"]
 [connection signal="pressed" from="GridContainer/Bass 1" to="GridContainer/Bass 1" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Bass 2" to="GridContainer/Bass 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Bass 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 2" to="." method="_on_bass_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 2" to="Timer_Bass" method="_on_bass_pressed"]
 [connection signal="pressed" from="GridContainer/Bass 2" to="GridContainer/Bass 2" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Bass 3" to="GridContainer/Bass 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Bass 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 3" to="." method="_on_bass_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 3" to="Timer_Bass" method="_on_bass_pressed"]
 [connection signal="pressed" from="GridContainer/Bass 3" to="GridContainer/Bass 3" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Bass 4" to="GridContainer/Bass 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Bass 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 4" to="." method="_on_bass_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 4" to="Timer_Bass" method="_on_bass_pressed"]
 [connection signal="pressed" from="GridContainer/Bass 4" to="GridContainer/Bass 4" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Synth 1" to="GridContainer/Synth 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Synth 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 1" to="." method="_on_synth_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 1" to="Timer_Synth" method="_on_synth_pressed"]
 [connection signal="pressed" from="GridContainer/Synth 1" to="GridContainer/Synth 1" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Synth 2" to="GridContainer/Synth 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Synth 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 2" to="." method="_on_synth_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 2" to="Timer_Synth" method="_on_synth_pressed"]
 [connection signal="pressed" from="GridContainer/Synth 2" to="GridContainer/Synth 2" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Synth 3" to="GridContainer/Synth 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Synth 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 3" to="." method="_on_synth_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 3" to="Timer_Synth" method="_on_synth_pressed"]
 [connection signal="pressed" from="GridContainer/Synth 3" to="GridContainer/Synth 3" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Synth 4" to="GridContainer/Synth 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Synth 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 4" to="." method="_on_synth_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 4" to="Timer_Synth" method="_on_synth_pressed"]
 [connection signal="pressed" from="GridContainer/Synth 4" to="GridContainer/Synth 4" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Pad 1" to="GridContainer/Pad 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Pad 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 1" to="." method="_on_pad_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 1" to="Timer_Pad" method="_on_pad_pressed"]
 [connection signal="pressed" from="GridContainer/Pad 1" to="GridContainer/Pad 1" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Pad 2" to="GridContainer/Pad 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Pad 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 2" to="." method="_on_pad_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 2" to="Timer_Pad" method="_on_pad_pressed"]
 [connection signal="pressed" from="GridContainer/Pad 2" to="GridContainer/Pad 2" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Pad 3" to="GridContainer/Pad 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Pad 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 3" to="." method="_on_pad_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 3" to="Timer_Pad" method="_on_pad_pressed"]
 [connection signal="pressed" from="GridContainer/Pad 3" to="GridContainer/Pad 3" method="_on_pressed"]
 [connection signal="mouse_entered" from="GridContainer/Pad 4" to="GridContainer/Pad 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="GridContainer/Pad 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 4" to="." method="_on_pad_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 4" to="Timer_Pad" method="_on_pad_pressed"]
 [connection signal="pressed" from="GridContainer/Pad 4" to="GridContainer/Pad 4" method="_on_pressed"]
 [connection signal="value_changed" from="VSlider" to="VSlider" method="_on_value_changed"]

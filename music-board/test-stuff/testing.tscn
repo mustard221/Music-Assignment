@@ -1,59 +1,87 @@
-[gd_scene load_steps=8 format=3 uid="uid://8we6pi6x1fm0"]
+[gd_scene load_steps=15 format=3 uid="uid://8we6pi6x1fm0"]
 
-[ext_resource type="Script" path="res://test-stuff/testing.gd" id="1_wdqc3"]
+[ext_resource type="Script" path="res://test-stuff/testing.gd" id="1_0ik3b"]
+[ext_resource type="Script" path="res://test-stuff/timer_test.gd" id="2_5y5c6"]
+[ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="2_legip"]
 [ext_resource type="Script" path="res://script/beat1.gd" id="2_o57ku"]
+[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="3_nwd1y"]
 [ext_resource type="Script" path="res://script/bass1.gd" id="4_3bso1"]
+[ext_resource type="Texture2D" uid="uid://bbbd3la27sj7g" path="res://assets/progressbar.png" id="6_cflx6"]
 [ext_resource type="Script" path="res://script/beat3.gd" id="6_evjbn"]
+[ext_resource type="Texture2D" uid="uid://3rnahrj5px4j" path="res://assets/progressbar-fill.png" id="7_2cxwp"]
 [ext_resource type="AudioStream" uid="uid://danpcbgpjx2m1" path="res://music/Music-Beat 3-2.ogg" id="7_2eb1q"]
 [ext_resource type="AudioStream" uid="uid://c620rsrk0ic1b" path="res://music/Music-Beat 1 -3.ogg" id="7_yojiq"]
 [ext_resource type="AudioStream" uid="uid://cy280c1i5xxfj" path="res://music/Music-Beat 2 -4.ogg" id="9_etexk"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_agoul"]
+texture = ExtResource("6_cflx6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6nxdr"]
+texture = ExtResource("7_2cxwp")
+
 [node name="root" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_wdqc3")
+script = ExtResource("1_0ik3b")
 
-[node name="Button" type="Button" parent="."]
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.555
+script = ExtResource("2_5y5c6")
+
+[node name="Button" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 208.0
 offset_top = 103.0
 offset_right = 409.0
 offset_bottom = 200.0
+texture_normal = ExtResource("2_legip")
+texture_pressed = ExtResource("3_nwd1y")
 script = ExtResource("2_o57ku")
+
+[node name="ProgressBar" type="ProgressBar" parent="Button"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -3.0
+offset_right = 96.0
+offset_bottom = 8.0
+theme_override_styles/background = SubResource("StyleBoxTexture_agoul")
+theme_override_styles/fill = SubResource("StyleBoxTexture_6nxdr")
+max_value = 6.555
+step = 1.0
+show_percentage = false
 
 [node name="Music-beat1-3" type="AudioStreamPlayer" parent="Button"]
 stream = ExtResource("7_yojiq")
 
-[node name="Button2" type="Button" parent="."]
+[node name="Button2" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 207.0
 offset_top = 339.0
 offset_right = 408.0
 offset_bottom = 436.0
+texture_normal = ExtResource("2_legip")
+texture_pressed = ExtResource("3_nwd1y")
 script = ExtResource("4_3bso1")
 
-[node name="Music-beat2-4" type="AudioStreamPlayer" parent="."]
+[node name="Music-beat2-4" type="AudioStreamPlayer" parent="Button2"]
 stream = ExtResource("9_etexk")
 
-[node name="Button3" type="Button" parent="."]
+[node name="Button3" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 208.0
 offset_top = 220.0
 offset_right = 409.0
 offset_bottom = 317.0
+texture_normal = ExtResource("2_legip")
+texture_pressed = ExtResource("3_nwd1y")
 script = ExtResource("6_evjbn")
 
-[node name="Music-beat3-2" type="AudioStreamPlayer" parent="."]
+[node name="Music-beat3-2" type="AudioStreamPlayer" parent="Button3"]
 stream = ExtResource("7_2eb1q")
 
-[node name="Progress" type="ProgressBar" parent="."]
-offset_left = 211.0
-offset_top = 53.0
-offset_right = 400.0
-offset_bottom = 80.0
-show_percentage = false
-
-[node name="Timer" type="Timer" parent="."]
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Timer" method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Button/ProgressBar" method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
