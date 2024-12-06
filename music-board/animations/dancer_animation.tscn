@@ -1,6 +1,7 @@
-[gd_scene load_steps=37 format=3 uid="uid://b043lhmqjjes0"]
+[gd_scene load_steps=44 format=3 uid="uid://b043lhmqjjes0"]
 
 [ext_resource type="Texture2D" uid="uid://4sbawrkpmiql" path="res://animations/dancer-idle-sheet.png" id="1_xwrw1"]
+[ext_resource type="Texture2D" uid="uid://s0015lrcrmoc" path="res://animations/dance1-sheet.png" id="2_su6h8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5c3vm"]
 atlas = ExtResource("1_xwrw1")
@@ -134,6 +135,30 @@ region = Rect2(9300, 0, 300, 300)
 atlas = ExtResource("1_xwrw1")
 region = Rect2(9600, 0, 300, 300)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlw62"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(0, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2147"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(300, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tc5wx"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(600, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbp7o"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(900, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6h1w"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(1200, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db0kf"]
+atlas = ExtResource("2_su6h8")
+region = Rect2(1500, 0, 300, 300)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_1yhir"]
 animations = [{
 "frames": [{
@@ -239,6 +264,29 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlw62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2147")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tc5wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbp7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6h1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_db0kf")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 9.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6yc6u"]
@@ -251,7 +299,6 @@ position = Vector2(578, 333)
 sprite_frames = SubResource("SpriteFrames_1yhir")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.918098
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(582, 325)

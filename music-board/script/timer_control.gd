@@ -19,7 +19,7 @@ var beat_active = false
 var bass_active = false
 var synth_active = false
 var pad_active = false #tracking status of buttons
-
+##mostly timer stuff
 func _ready():
 	var wait_time = 6.555
 	pb_beat.value = wait_time
@@ -43,24 +43,28 @@ func _on_beat_pressed():
 	else:
 		_start_timer(timer_beat, pb_beat)
 	beat_active = !beat_active
+	_check_buttons_and_play_animation()
 func _on_bass_pressed():
 	if bass_active:
 		_stop_timer(timer_bass, pb_bass)
 	else:
 		_start_timer(timer_bass, pb_bass)
 	bass_active = !bass_active
+	_check_buttons_and_play_animation()
 func _on_synth_pressed():
 	if synth_active:
 		_stop_timer(timer_synth, pb_synth)
 	else:
 		_start_timer(timer_synth, pb_synth)
 	synth_active = !synth_active
+	_check_buttons_and_play_animation()
 func _on_pad_pressed():
 	if pad_active:
 		_stop_timer(timer_pad, pb_pad)
 	else:
 		_start_timer(timer_pad, pb_pad)
-	pad_active = !pad_active #button presses toggle corresponding timer/progressbar on if off and vice versa
+	pad_active = !pad_active #using ! so can switch between on and off
+	_check_buttons_and_play_animation() #button presses toggle corresponding timer/progressbar on if off and vice versa
 
 func _start_timer(timer: Timer, pb: ProgressBar):
 	timer.stop()
@@ -68,3 +72,17 @@ func _start_timer(timer: Timer, pb: ProgressBar):
 
 func _stop_timer(timer: Timer, pb: ProgressBar):
 	timer.stop() #timer starts/stops
+##animation stuff
+func _check_buttons_and_play_animation():
+	var on_buttons = 0
+	if beat_active: on_buttons += 1
+	if bass_active: on_buttons += 1
+	if synth_active: on_buttons += 1
+	if pad_active: on_buttons += 1  #check how many buttons are on
+	_play_animation("idle" if on_buttons == 0 else "dance" + str(on_buttons)) #assign animation based on number of buttons on
+
+func _play_animation(animation: String):
+	var animation_node = $CharacterBody2D/AnimatedSprite2D
+	if animation_node.is_playing():
+		animation_node.stop()  #stop current animation to avoid overlapping
+	animation_node.play(animation)  #play new animation
