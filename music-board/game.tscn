@@ -1,11 +1,60 @@
-[gd_scene load_steps=10 format=3 uid="uid://dloieo6trxah0"]
+[gd_scene load_steps=59 format=3 uid="uid://dloieo6trxah0"]
 
 [ext_resource type="PackedScene" uid="uid://b043lhmqjjes0" path="res://animations/dancer_animation.tscn" id="1_2x2i7"]
+[ext_resource type="Script" path="res://script/board.gd" id="1_u7c8n"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
+[ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="4_hwumr"]
+[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="5_7f74m"]
 [ext_resource type="Script" path="res://script/volume_slider.gd" id="5_hmhr5"]
+[ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="6_2mg4b"]
+[ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="7_kbk2v"]
+[ext_resource type="Script" path="res://script/beat1.gd" id="8_f4de5"]
+[ext_resource type="AudioStream" uid="uid://c620rsrk0ic1b" path="res://music/Music-Beat 1 -3.ogg" id="8_fye0u"]
+[ext_resource type="AudioStream" uid="uid://cy280c1i5xxfj" path="res://music/Music-Beat 2 -4.ogg" id="9_bwcak"]
+[ext_resource type="Script" path="res://script/beat2.gd" id="10_2thb1"]
+[ext_resource type="AudioStream" uid="uid://danpcbgpjx2m1" path="res://music/Music-Beat 3-2.ogg" id="10_xaasw"]
+[ext_resource type="AudioStream" uid="uid://cnh8dh2x1atws" path="res://music/Music-Beat 4-1.ogg" id="11_qv67t"]
+[ext_resource type="Script" path="res://script/beat3.gd" id="12_idwuk"]
+[ext_resource type="Texture2D" uid="uid://b1fp6ayulcrkh" path="res://assets/bass-unpressed.png" id="12_ocs8n"]
+[ext_resource type="Texture2D" uid="uid://br7emfip3fgxr" path="res://assets/bass-pressed.png" id="13_uac2f"]
+[ext_resource type="Texture2D" uid="uid://kjwhw1mvq8lb" path="res://assets/bass-unpressed-hov.png" id="14_8jmwx"]
+[ext_resource type="Script" path="res://script/beat4.gd" id="14_an2kt"]
+[ext_resource type="Texture2D" uid="uid://dyw038pw2eca4" path="res://assets/bass-unpressed-dis.png" id="15_23440"]
+[ext_resource type="AudioStream" uid="uid://bd0mmh36d4g3d" path="res://music/Music-Bass 1-9.ogg" id="16_31x2p"]
+[ext_resource type="AudioStream" uid="uid://hxwb7esxmpas" path="res://music/Music-Bass 2-10.ogg" id="17_ba1vg"]
 [ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="18_gq6md"]
+[ext_resource type="AudioStream" uid="uid://cyta0a3d4woy0" path="res://music/Music-Bass 3-11.ogg" id="18_txy7h"]
+[ext_resource type="AudioStream" uid="uid://cei24ilxex4it" path="res://music/Music-Bass 4-12.ogg" id="19_qynwc"]
 [ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="19_x8p46"]
+[ext_resource type="Texture2D" uid="uid://bjkdr61o07jm8" path="res://assets/synth-unpressed.png" id="20_0ltmo"]
+[ext_resource type="Script" path="res://script/bass1.gd" id="20_ukylk"]
 [ext_resource type="Texture2D" uid="uid://p2asa6bc0dv2" path="res://assets/volume.png" id="21_hob1n"]
+[ext_resource type="Texture2D" uid="uid://bkhdkw6tmfrnx" path="res://assets/synth-pressed.png" id="21_j7vev"]
+[ext_resource type="Script" path="res://script/bass2.gd" id="22_istnb"]
+[ext_resource type="Texture2D" uid="uid://boeg2wqwx6iup" path="res://assets/synth-unpressed-hov.png" id="22_vvweu"]
+[ext_resource type="Texture2D" uid="uid://4nn02dh40nmg" path="res://assets/synth-unpressed-dis.png" id="23_i3yyp"]
+[ext_resource type="Script" path="res://script/bass3.gd" id="24_e26fd"]
+[ext_resource type="AudioStream" uid="uid://cchgt1i6l5w08" path="res://music/Music-Synth 1-13.ogg" id="24_mg1l6"]
+[ext_resource type="AudioStream" uid="uid://cs25qyuqlu1eb" path="res://music/Music-Synth 2-14.ogg" id="25_6l6eu"]
+[ext_resource type="Script" path="res://script/bass4.gd" id="26_36oko"]
+[ext_resource type="AudioStream" uid="uid://db0ef6txpwe3m" path="res://music/Music-Synth 3-15.ogg" id="26_lg2uc"]
+[ext_resource type="AudioStream" uid="uid://ec7gy7pk83s" path="res://music/Music-Synth 4-16.ogg" id="27_yotx6"]
+[ext_resource type="Texture2D" uid="uid://dyilg1e0y3qe0" path="res://assets/pad-unpressed.png" id="28_lo2dk"]
+[ext_resource type="Texture2D" uid="uid://1vo6irgx1w10" path="res://assets/pad-pressed.png" id="29_4j6p1"]
+[ext_resource type="Texture2D" uid="uid://djqnqxwerscdh" path="res://assets/pad-unpressed-hov.png" id="30_isu8d"]
+[ext_resource type="Texture2D" uid="uid://dnhd2v6sog01g" path="res://assets/pad-unpressed-dis.png" id="31_q6i0q"]
+[ext_resource type="AudioStream" uid="uid://c6o11g7kgc5ku" path="res://music/Music-Pad 1-5.ogg" id="32_megrg"]
+[ext_resource type="Script" path="res://script/synth1.gd" id="32_qttpi"]
+[ext_resource type="AudioStream" uid="uid://rtnoo7n7rddt" path="res://music/Music-Pad 2-6.ogg" id="33_pq7va"]
+[ext_resource type="Script" path="res://script/synth2.gd" id="34_kq4i4"]
+[ext_resource type="AudioStream" uid="uid://grfn4tpkeu4q" path="res://music/Music-Pad 3-7.ogg" id="34_t1724"]
+[ext_resource type="AudioStream" uid="uid://dj3pmk6vldues" path="res://music/Music-Pad 4-8.ogg" id="35_1wtyc"]
+[ext_resource type="Script" path="res://script/synth3.gd" id="36_3e064"]
+[ext_resource type="Script" path="res://script/synth4.gd" id="38_r78pc"]
+[ext_resource type="Script" path="res://script/pad1.gd" id="44_1avv2"]
+[ext_resource type="Script" path="res://script/pad2.gd" id="46_0oq27"]
+[ext_resource type="Script" path="res://script/pad3.gd" id="48_x027g"]
+[ext_resource type="Script" path="res://script/pad4.gd" id="50_3jrfr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr5w4"]
 
@@ -13,148 +62,244 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txarv"]
 
-[node name="Node2D" type="Node2D"]
-position = Vector2(2, 0)
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 2.0
+offset_right = 2.0
 
 [node name="character" parent="." instance=ExtResource("1_2x2i7")]
 position = Vector2(-42, -245)
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 236.0
 offset_top = 100.0
 offset_right = 936.0
 offset_bottom = 643.0
 texture = ExtResource("1_yccf3")
 
-[node name="Beat 1" type="TextureButton" parent="."]
-offset_left = 316.0
-offset_top = 151.0
-offset_right = 426.0
-offset_bottom = 261.0
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 149.0
+offset_right = 895.0
+offset_bottom = 697.0
+theme_override_constants/h_separation = -1
+theme_override_constants/v_separation = -1
+columns = 4
+script = ExtResource("1_u7c8n")
+
+[node name="Beat 1" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("4_hwumr")
+texture_pressed = ExtResource("5_7f74m")
+texture_hover = ExtResource("6_2mg4b")
+texture_disabled = ExtResource("7_kbk2v")
+script = ExtResource("8_f4de5")
 metadata/_edit_use_anchors_ = true
 
-[node name="Beat 2" type="TextureButton" parent="."]
-offset_left = 316.0
-offset_top = 257.0
-offset_right = 426.0
-offset_bottom = 367.0
+[node name="Music-beat1-3" type="AudioStreamPlayer" parent="GridContainer/Beat 1"]
+stream = ExtResource("8_fye0u")
+
+[node name="Beat 2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("4_hwumr")
+texture_pressed = ExtResource("5_7f74m")
+texture_hover = ExtResource("6_2mg4b")
+texture_disabled = ExtResource("7_kbk2v")
+script = ExtResource("10_2thb1")
 metadata/_edit_use_anchors_ = true
 
-[node name="Beat 3" type="TextureButton" parent="."]
-offset_left = 318.0
-offset_top = 365.0
-offset_right = 428.0
-offset_bottom = 475.0
+[node name="Music-beat2-4" type="AudioStreamPlayer" parent="GridContainer/Beat 2"]
+stream = ExtResource("9_bwcak")
+
+[node name="Beat 3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("4_hwumr")
+texture_pressed = ExtResource("5_7f74m")
+texture_hover = ExtResource("6_2mg4b")
+texture_disabled = ExtResource("7_kbk2v")
+script = ExtResource("12_idwuk")
 metadata/_edit_use_anchors_ = true
 
-[node name="Beat 4" type="TextureButton" parent="."]
-offset_left = 317.0
-offset_top = 473.0
-offset_right = 427.0
-offset_bottom = 583.0
+[node name="Music-beat3-2" type="AudioStreamPlayer" parent="GridContainer/Beat 3"]
+stream = ExtResource("10_xaasw")
+
+[node name="Beat 4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("4_hwumr")
+texture_pressed = ExtResource("5_7f74m")
+texture_hover = ExtResource("6_2mg4b")
+texture_disabled = ExtResource("7_kbk2v")
+script = ExtResource("14_an2kt")
 metadata/_edit_use_anchors_ = true
 
-[node name="Bass 1" type="TextureButton" parent="."]
-offset_left = 425.0
-offset_top = 151.0
-offset_right = 535.0
-offset_bottom = 261.0
+[node name="Music-beat4-1" type="AudioStreamPlayer" parent="GridContainer/Beat 4"]
+stream = ExtResource("11_qv67t")
+
+[node name="Bass 1" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("12_ocs8n")
+texture_pressed = ExtResource("13_uac2f")
+texture_hover = ExtResource("14_8jmwx")
+texture_disabled = ExtResource("15_23440")
+script = ExtResource("20_ukylk")
 metadata/_edit_use_anchors_ = true
 
-[node name="Bass 2" type="TextureButton" parent="."]
-offset_left = 424.0
-offset_top = 258.0
-offset_right = 534.0
-offset_bottom = 368.0
+[node name="Music-bass1-9" type="AudioStreamPlayer" parent="GridContainer/Bass 1"]
+stream = ExtResource("16_31x2p")
+
+[node name="Bass 2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("12_ocs8n")
+texture_pressed = ExtResource("13_uac2f")
+texture_hover = ExtResource("14_8jmwx")
+texture_disabled = ExtResource("15_23440")
+script = ExtResource("22_istnb")
 metadata/_edit_use_anchors_ = true
 
-[node name="Bass 3" type="TextureButton" parent="."]
-offset_left = 426.0
-offset_top = 365.0
-offset_right = 536.0
-offset_bottom = 475.0
+[node name="Music-bass2-10" type="AudioStreamPlayer" parent="GridContainer/Bass 2"]
+stream = ExtResource("17_ba1vg")
+
+[node name="Bass 3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("12_ocs8n")
+texture_pressed = ExtResource("13_uac2f")
+texture_hover = ExtResource("14_8jmwx")
+texture_disabled = ExtResource("15_23440")
+script = ExtResource("24_e26fd")
 metadata/_edit_use_anchors_ = true
 
-[node name="Bass 4" type="TextureButton" parent="."]
-offset_left = 425.0
-offset_top = 473.0
-offset_right = 535.0
-offset_bottom = 583.0
+[node name="Music-bass3-11" type="AudioStreamPlayer" parent="GridContainer/Bass 3"]
+stream = ExtResource("18_txy7h")
+
+[node name="Bass 4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("12_ocs8n")
+texture_pressed = ExtResource("13_uac2f")
+texture_hover = ExtResource("14_8jmwx")
+texture_disabled = ExtResource("15_23440")
+script = ExtResource("26_36oko")
 metadata/_edit_use_anchors_ = true
 
-[node name="Synth 1" type="TextureButton" parent="."]
-offset_left = 533.0
-offset_top = 151.0
-offset_right = 643.0
-offset_bottom = 261.0
+[node name="Music-bass4-12" type="AudioStreamPlayer" parent="GridContainer/Bass 4"]
+stream = ExtResource("19_qynwc")
+
+[node name="Synth 1" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("20_0ltmo")
+texture_pressed = ExtResource("21_j7vev")
+texture_hover = ExtResource("22_vvweu")
+texture_disabled = ExtResource("23_i3yyp")
+script = ExtResource("32_qttpi")
 metadata/_edit_use_anchors_ = true
 
-[node name="Synth 2" type="TextureButton" parent="."]
-offset_left = 532.0
-offset_top = 258.0
-offset_right = 642.0
-offset_bottom = 368.0
+[node name="Music-synth1-13" type="AudioStreamPlayer" parent="GridContainer/Synth 1"]
+stream = ExtResource("24_mg1l6")
+
+[node name="Synth 2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("20_0ltmo")
+texture_pressed = ExtResource("21_j7vev")
+texture_hover = ExtResource("22_vvweu")
+texture_disabled = ExtResource("23_i3yyp")
+script = ExtResource("34_kq4i4")
 metadata/_edit_use_anchors_ = true
 
-[node name="Synth 3" type="TextureButton" parent="."]
-offset_left = 533.0
-offset_top = 363.0
-offset_right = 643.0
-offset_bottom = 473.0
+[node name="Music-synth2-14" type="AudioStreamPlayer" parent="GridContainer/Synth 2"]
+stream = ExtResource("25_6l6eu")
+
+[node name="Synth 3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("20_0ltmo")
+texture_pressed = ExtResource("21_j7vev")
+texture_hover = ExtResource("22_vvweu")
+texture_disabled = ExtResource("23_i3yyp")
+script = ExtResource("36_3e064")
 metadata/_edit_use_anchors_ = true
 
-[node name="Synth 4" type="TextureButton" parent="."]
-offset_left = 533.0
-offset_top = 470.0
-offset_right = 643.0
-offset_bottom = 580.0
+[node name="Music-synth3-15" type="AudioStreamPlayer" parent="GridContainer/Synth 3"]
+stream = ExtResource("26_lg2uc")
+
+[node name="Synth 4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("20_0ltmo")
+texture_pressed = ExtResource("21_j7vev")
+texture_hover = ExtResource("22_vvweu")
+texture_disabled = ExtResource("23_i3yyp")
+script = ExtResource("38_r78pc")
 metadata/_edit_use_anchors_ = true
 
-[node name="Lead 1" type="TextureButton" parent="."]
-offset_left = 641.0
-offset_top = 152.0
-offset_right = 751.0
-offset_bottom = 262.0
+[node name="Music-synth4-16" type="AudioStreamPlayer" parent="GridContainer/Synth 4"]
+stream = ExtResource("27_yotx6")
+
+[node name="Pad 1" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("28_lo2dk")
+texture_pressed = ExtResource("29_4j6p1")
+texture_hover = ExtResource("30_isu8d")
+texture_disabled = ExtResource("31_q6i0q")
+script = ExtResource("44_1avv2")
 metadata/_edit_use_anchors_ = true
 
-[node name="Lead 2" type="TextureButton" parent="."]
-offset_left = 640.0
-offset_top = 257.0
-offset_right = 750.0
-offset_bottom = 367.0
+[node name="Music-pad1-5" type="AudioStreamPlayer" parent="GridContainer/Pad 1"]
+stream = ExtResource("32_megrg")
+
+[node name="Pad 2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("28_lo2dk")
+texture_pressed = ExtResource("29_4j6p1")
+texture_hover = ExtResource("30_isu8d")
+texture_disabled = ExtResource("31_q6i0q")
+script = ExtResource("46_0oq27")
 metadata/_edit_use_anchors_ = true
 
-[node name="Lead 3" type="TextureButton" parent="."]
-offset_left = 641.0
-offset_top = 362.0
-offset_right = 751.0
-offset_bottom = 472.0
+[node name="Music-pad2-6" type="AudioStreamPlayer" parent="GridContainer/Pad 2"]
+stream = ExtResource("33_pq7va")
+
+[node name="Pad 3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("28_lo2dk")
+texture_pressed = ExtResource("29_4j6p1")
+texture_hover = ExtResource("30_isu8d")
+texture_disabled = ExtResource("31_q6i0q")
+script = ExtResource("48_x027g")
 metadata/_edit_use_anchors_ = true
 
-[node name="Lead 4" type="TextureButton" parent="."]
-offset_left = 640.0
-offset_top = 469.0
-offset_right = 750.0
-offset_bottom = 579.0
+[node name="Music-pad3-7" type="AudioStreamPlayer" parent="GridContainer/Pad 3"]
+stream = ExtResource("34_t1724")
+
+[node name="Pad 4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
 keep_pressed_outside = true
+texture_normal = ExtResource("28_lo2dk")
+texture_pressed = ExtResource("29_4j6p1")
+texture_hover = ExtResource("30_isu8d")
+texture_disabled = ExtResource("31_q6i0q")
+script = ExtResource("50_3jrfr")
 metadata/_edit_use_anchors_ = true
+
+[node name="Music-pad4-8" type="AudioStreamPlayer" parent="GridContainer/Pad 4"]
+stream = ExtResource("35_1wtyc")
 
 [node name="VSlider" type="VSlider" parent="."]
+layout_mode = 0
 offset_left = 798.0
 offset_top = 137.0
 offset_right = 842.0
@@ -167,42 +312,59 @@ theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv"
 script = ExtResource("5_hmhr5")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 799.0
 offset_top = 585.0
 offset_right = 838.0
 offset_bottom = 618.0
 texture = ExtResource("21_hob1n")
 
-[connection signal="mouse_entered" from="Beat 1" to="Beat 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="Beat 1" to="Beat 1" method="_on_pressed"]
-[connection signal="mouse_entered" from="Beat 2" to="Beat 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="Beat 2" to="Beat 2" method="_on_pressed"]
-[connection signal="mouse_entered" from="Beat 3" to="Beat 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="Beat 3" to="Beat 3" method="_on_pressed"]
-[connection signal="mouse_entered" from="Beat 4" to="Beat 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="Beat 4" to="Beat 4" method="_on_pressed"]
-[connection signal="mouse_entered" from="Bass 1" to="Bass 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="Bass 1" to="Bass 1" method="_on_pressed"]
-[connection signal="mouse_entered" from="Bass 2" to="Bass 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="Bass 2" to="Bass 2" method="_on_pressed"]
-[connection signal="mouse_entered" from="Bass 3" to="Bass 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="Bass 3" to="Bass 3" method="_on_pressed"]
-[connection signal="mouse_entered" from="Bass 4" to="Bass 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="Bass 4" to="Bass 4" method="_on_pressed"]
-[connection signal="mouse_entered" from="Synth 1" to="Synth 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="Synth 1" to="Synth 1" method="_on_pressed"]
-[connection signal="mouse_entered" from="Synth 2" to="Synth 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="Synth 2" to="Synth 2" method="_on_pressed"]
-[connection signal="mouse_entered" from="Synth 3" to="Synth 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="Synth 3" to="Synth 3" method="_on_pressed"]
-[connection signal="mouse_entered" from="Synth 4" to="Synth 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="Synth 4" to="Synth 4" method="_on_pressed"]
-[connection signal="mouse_entered" from="Lead 1" to="Lead 1" method="_on_mouse_entered"]
-[connection signal="pressed" from="Lead 1" to="Lead 1" method="_on_pressed"]
-[connection signal="mouse_entered" from="Lead 2" to="Lead 2" method="_on_mouse_entered"]
-[connection signal="pressed" from="Lead 2" to="Lead 2" method="_on_pressed"]
-[connection signal="mouse_entered" from="Lead 3" to="Lead 3" method="_on_mouse_entered"]
-[connection signal="pressed" from="Lead 3" to="Lead 3" method="_on_pressed"]
-[connection signal="mouse_entered" from="Lead 4" to="Lead 4" method="_on_mouse_entered"]
-[connection signal="pressed" from="Lead 4" to="Lead 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Beat 1" to="GridContainer/Beat 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Beat 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 1" to="GridContainer/Beat 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Beat 2" to="GridContainer/Beat 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Beat 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 2" to="GridContainer/Beat 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Beat 3" to="GridContainer/Beat 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Beat 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 3" to="GridContainer/Beat 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Beat 4" to="GridContainer/Beat 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Beat 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Beat 4" to="GridContainer/Beat 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Bass 1" to="GridContainer/Bass 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Bass 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 1" to="GridContainer/Bass 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Bass 2" to="GridContainer/Bass 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Bass 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 2" to="GridContainer/Bass 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Bass 3" to="GridContainer/Bass 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Bass 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 3" to="GridContainer/Bass 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Bass 4" to="GridContainer/Bass 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Bass 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Bass 4" to="GridContainer/Bass 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Synth 1" to="GridContainer/Synth 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Synth 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 1" to="GridContainer/Synth 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Synth 2" to="GridContainer/Synth 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Synth 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 2" to="GridContainer/Synth 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Synth 3" to="GridContainer/Synth 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Synth 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 3" to="GridContainer/Synth 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Synth 4" to="GridContainer/Synth 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Synth 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Synth 4" to="GridContainer/Synth 4" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Pad 1" to="GridContainer/Pad 1" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Pad 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 1" to="GridContainer/Pad 1" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Pad 2" to="GridContainer/Pad 2" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Pad 2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 2" to="GridContainer/Pad 2" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Pad 3" to="GridContainer/Pad 3" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Pad 3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 3" to="GridContainer/Pad 3" method="_on_pressed"]
+[connection signal="mouse_entered" from="GridContainer/Pad 4" to="GridContainer/Pad 4" method="_on_mouse_entered"]
+[connection signal="pressed" from="GridContainer/Pad 4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Pad 4" to="GridContainer/Pad 4" method="_on_pressed"]
 [connection signal="value_changed" from="VSlider" to="VSlider" method="_on_value_changed"]
