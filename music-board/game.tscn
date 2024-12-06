@@ -48,13 +48,13 @@
 [ext_resource type="AudioStream" uid="uid://rtnoo7n7rddt" path="res://music/Music-Pad 2-6.ogg" id="33_pq7va"]
 [ext_resource type="Script" path="res://script/synth2.gd" id="34_kq4i4"]
 [ext_resource type="AudioStream" uid="uid://grfn4tpkeu4q" path="res://music/Music-Pad 3-7.ogg" id="34_t1724"]
-[ext_resource type="AudioStream" uid="uid://dj3pmk6vldues" path="res://music/Music-Pad 4-8.ogg" id="35_1wtyc"]
 [ext_resource type="Script" path="res://script/synth3.gd" id="36_3e064"]
 [ext_resource type="Script" path="res://script/synth4.gd" id="38_r78pc"]
 [ext_resource type="Script" path="res://script/pad1.gd" id="44_1avv2"]
 [ext_resource type="Script" path="res://script/pad2.gd" id="46_0oq27"]
 [ext_resource type="Script" path="res://script/pad3.gd" id="48_x027g"]
 [ext_resource type="Script" path="res://script/pad4.gd" id="50_3jrfr"]
+[ext_resource type="AudioStream" uid="uid://dgq1a2hrhe6cl" path="res://music/Music-Pad-4-8.ogg" id="51_xdpg6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr5w4"]
 
@@ -295,8 +295,8 @@ texture_disabled = ExtResource("31_q6i0q")
 script = ExtResource("50_3jrfr")
 metadata/_edit_use_anchors_ = true
 
-[node name="Music-pad4-8" type="AudioStreamPlayer" parent="GridContainer/Pad 4"]
-stream = ExtResource("35_1wtyc")
+[node name="Music-pad-4-8" type="AudioStreamPlayer" parent="GridContainer/Pad 4"]
+stream = ExtResource("51_xdpg6")
 
 [node name="VSlider" type="VSlider" parent="."]
 layout_mode = 0
@@ -309,6 +309,7 @@ theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
 theme_override_styles/slider = SubResource("StyleBoxEmpty_gr5w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_0gq48")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv")
+max_value = 10.0
 script = ExtResource("5_hmhr5")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
