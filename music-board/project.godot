@@ -21,3 +21,7 @@ buses/default_bus_layout="res://music/default_bus_layout.tres"
 [display]
 
 window/stretch/mode="canvas_items"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.102397, 0.120545, 0.143589, 1)

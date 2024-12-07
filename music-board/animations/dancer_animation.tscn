@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=3 uid="uid://b043lhmqjjes0"]
 
 [ext_resource type="Texture2D" uid="uid://4sbawrkpmiql" path="res://animations/dancer-idle-sheet.png" id="1_xwrw1"]
-[ext_resource type="Texture2D" uid="uid://s0015lrcrmoc" path="res://animations/dance1-sheet.png" id="2_su6h8"]
+[ext_resource type="Texture2D" uid="uid://o5a4b2blu0sx" path="res://animations/dance1-sheet.png" id="2_su6h8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5c3vm"]
 atlas = ExtResource("1_xwrw1")

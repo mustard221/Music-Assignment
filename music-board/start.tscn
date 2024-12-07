@@ -23,22 +23,24 @@ layout_mode = 3
 anchors_preset = 0
 script = SubResource("GDScript_7tlss")
 
+[node name="StartScreen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_j0eqy")
+autoplay = true
+bus = &"Start Screen"
+parameters/looping = true
+
 [node name="bg" parent="." instance=ExtResource("1_jdyu0")]
 
 [node name="Button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 262.0
+offset_left = 263.0
 offset_top = 99.0
-offset_right = 862.0
+offset_right = 863.0
 offset_bottom = 411.0
 pivot_offset = Vector2(649, 205)
 texture_normal = ExtResource("2_jkvdb")
 texture_pressed = ExtResource("3_p7cjx")
 texture_hover = ExtResource("4_0vm3g")
-
-[node name="StartScreen" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_j0eqy")
-autoplay = true
 
 [node name="character" parent="." instance=ExtResource("2_yp8oi")]
 position = Vector2(-24, 120)
