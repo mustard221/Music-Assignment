@@ -34,7 +34,18 @@ autoplay = true
 bus = &"Start Screen"
 parameters/looping = true
 
-[node name="Button" type="TextureButton" parent="."]
+[node name="character" parent="." instance=ExtResource("2_yp8oi")]
+position = Vector2(-12, 202)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = -14.0
+offset_right = 1079.0
+offset_bottom = 782.0
+texture = ExtResource("7_545db")
+
+[node name="Play" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 234.0
 offset_top = 198.0
@@ -46,15 +57,4 @@ texture_normal = ExtResource("2_jkvdb")
 texture_pressed = ExtResource("3_p7cjx")
 texture_hover = ExtResource("4_0vm3g")
 
-[node name="character" parent="." instance=ExtResource("2_yp8oi")]
-position = Vector2(-23, 189)
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 30.0
-offset_top = -14.0
-offset_right = 1079.0
-offset_bottom = 782.0
-texture = ExtResource("7_545db")
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_button_pressed"]
