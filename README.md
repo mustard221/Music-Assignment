@@ -10,9 +10,7 @@ You can control the beat, bass, synth and pad using various buttons and make the
 
 <img width="571" alt="start_screen" src="https://github.com/user-attachments/assets/8ec01ed4-490f-4e84-ae6d-6274ae142b5d">
 
-
-
-
+< br / >
 Once you run the game, you'll be presented with the start screen. Simply press play to begin!
 
 
@@ -63,8 +61,11 @@ On the right side, there is a volume slider. You can slide it up and down to low
 
 
 Video demonstration:
+
 https://youtu.be/sJD36G6wlFQ
 
 
+
 Assets made with Aseprite
+
 Music made with Cakewalk/Bandlab
