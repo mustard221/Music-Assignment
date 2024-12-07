@@ -1,6 +1,6 @@
 [gd_scene load_steps=137 format=3 uid="uid://dloieo6trxah0"]
 
-[ext_resource type="Script" path="res://script/timer_control.gd" id="1_picyf"]
+[ext_resource type="Script" path="res://script/timing_and_animation.gd" id="1_picyf"]
 [ext_resource type="Script" path="res://script/board.gd" id="1_u7c8n"]
 [ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
 [ext_resource type="Texture2D" uid="uid://o5a4b2blu0sx" path="res://animations/dance1-sheet.png" id="4_8fu25"]
