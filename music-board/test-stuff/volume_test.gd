@@ -1,4 +1,4 @@
-extends VSlider
+extends VSlider ##figuring out volume slider
 
 var master_bus = AudioServer.get_bus_index("Master")
 

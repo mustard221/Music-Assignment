@@ -1,4 +1,4 @@
-extends Timer
+extends Timer  ##trying different ways to add timer
 
 var timer_on: bool = false
 

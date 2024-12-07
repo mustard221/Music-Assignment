@@ -1,4 +1,4 @@
-extends Control
+extends Control ##trying different ways to add timer
 
 @onready var timer = $Timer
 @onready var pb = $Button/ProgressBar
