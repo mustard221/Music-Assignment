@@ -1,340 +1,340 @@
 [gd_scene load_steps=137 format=3 uid="uid://dloieo6trxah0"]
 
-[ext_resource type="Script" path="res://script/timing_and_animation.gd" id="1_picyf"]
-[ext_resource type="Script" path="res://script/board.gd" id="1_u7c8n"]
-[ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="1_yccf3"]
-[ext_resource type="Texture2D" uid="uid://o5a4b2blu0sx" path="res://animations/dance1-sheet.png" id="4_8fu25"]
-[ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="4_hwumr"]
-[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="5_7f74m"]
-[ext_resource type="Script" path="res://script/volume_slider.gd" id="5_hmhr5"]
-[ext_resource type="Texture2D" uid="uid://4sbawrkpmiql" path="res://animations/dancer-idle-sheet.png" id="5_jkha2"]
-[ext_resource type="Texture2D" uid="uid://spr4tp8350dj" path="res://animations/dance2-sheet.png" id="5_vvqpg"]
-[ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="6_2mg4b"]
-[ext_resource type="Texture2D" uid="uid://d0y2thmnfh406" path="res://animations/dance3-sheet.png" id="6_7gp3y"]
-[ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="7_kbk2v"]
-[ext_resource type="Texture2D" uid="uid://s5t7d36vplwp" path="res://animations/dance4-sheet.png" id="7_pstxv"]
-[ext_resource type="Script" path="res://script/beat1.gd" id="8_f4de5"]
-[ext_resource type="AudioStream" uid="uid://c620rsrk0ic1b" path="res://music/Music-Beat 1 -3.ogg" id="8_fye0u"]
-[ext_resource type="AudioStream" uid="uid://cy280c1i5xxfj" path="res://music/Music-Beat 2 -4.ogg" id="9_bwcak"]
-[ext_resource type="Script" path="res://script/beat2.gd" id="10_2thb1"]
-[ext_resource type="AudioStream" uid="uid://danpcbgpjx2m1" path="res://music/Music-Beat 3-2.ogg" id="10_xaasw"]
-[ext_resource type="AudioStream" uid="uid://cnh8dh2x1atws" path="res://music/Music-Beat 4-1.ogg" id="11_qv67t"]
-[ext_resource type="Script" path="res://script/beat3.gd" id="12_idwuk"]
-[ext_resource type="Texture2D" uid="uid://b1fp6ayulcrkh" path="res://assets/bass-unpressed.png" id="12_ocs8n"]
-[ext_resource type="Texture2D" uid="uid://dfmtehi6ola47" path="res://test-stuff/progressbar-test.png" id="12_v6ngg"]
-[ext_resource type="Texture2D" uid="uid://br7emfip3fgxr" path="res://assets/bass-pressed.png" id="13_uac2f"]
-[ext_resource type="Texture2D" uid="uid://3rnahrj5px4j" path="res://assets/progressbar-fill.png" id="13_v4spy"]
-[ext_resource type="Texture2D" uid="uid://kjwhw1mvq8lb" path="res://assets/bass-unpressed-hov.png" id="14_8jmwx"]
-[ext_resource type="Script" path="res://script/beat4.gd" id="14_an2kt"]
-[ext_resource type="Texture2D" uid="uid://dyw038pw2eca4" path="res://assets/bass-unpressed-dis.png" id="15_23440"]
-[ext_resource type="AudioStream" uid="uid://bd0mmh36d4g3d" path="res://music/Music-Bass 1-9.ogg" id="16_31x2p"]
-[ext_resource type="AudioStream" uid="uid://hxwb7esxmpas" path="res://music/Music-Bass 2-10.ogg" id="17_ba1vg"]
-[ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="18_gq6md"]
-[ext_resource type="AudioStream" uid="uid://cyta0a3d4woy0" path="res://music/Music-Bass 3-11.ogg" id="18_txy7h"]
-[ext_resource type="AudioStream" uid="uid://cei24ilxex4it" path="res://music/Music-Bass 4-12.ogg" id="19_qynwc"]
-[ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="19_x8p46"]
-[ext_resource type="Texture2D" uid="uid://bjkdr61o07jm8" path="res://assets/synth-unpressed.png" id="20_0ltmo"]
-[ext_resource type="Script" path="res://script/bass1.gd" id="20_ukylk"]
-[ext_resource type="Texture2D" uid="uid://p2asa6bc0dv2" path="res://assets/volume.png" id="21_hob1n"]
-[ext_resource type="Texture2D" uid="uid://bkhdkw6tmfrnx" path="res://assets/synth-pressed.png" id="21_j7vev"]
-[ext_resource type="Script" path="res://script/bass2.gd" id="22_istnb"]
-[ext_resource type="Texture2D" uid="uid://boeg2wqwx6iup" path="res://assets/synth-unpressed-hov.png" id="22_vvweu"]
-[ext_resource type="Texture2D" uid="uid://4nn02dh40nmg" path="res://assets/synth-unpressed-dis.png" id="23_i3yyp"]
-[ext_resource type="Script" path="res://script/bass3.gd" id="24_e26fd"]
-[ext_resource type="AudioStream" uid="uid://cchgt1i6l5w08" path="res://music/Music-Synth 1-13.ogg" id="24_mg1l6"]
-[ext_resource type="AudioStream" uid="uid://cs25qyuqlu1eb" path="res://music/Music-Synth 2-14.ogg" id="25_6l6eu"]
-[ext_resource type="Script" path="res://script/bass4.gd" id="26_36oko"]
-[ext_resource type="AudioStream" uid="uid://db0ef6txpwe3m" path="res://music/Music-Synth 3-15.ogg" id="26_lg2uc"]
-[ext_resource type="AudioStream" uid="uid://ec7gy7pk83s" path="res://music/Music-Synth 4-16.ogg" id="27_yotx6"]
-[ext_resource type="Texture2D" uid="uid://dyilg1e0y3qe0" path="res://assets/pad-unpressed.png" id="28_lo2dk"]
-[ext_resource type="Texture2D" uid="uid://1vo6irgx1w10" path="res://assets/pad-pressed.png" id="29_4j6p1"]
-[ext_resource type="Texture2D" uid="uid://djqnqxwerscdh" path="res://assets/pad-unpressed-hov.png" id="30_isu8d"]
-[ext_resource type="Texture2D" uid="uid://dnhd2v6sog01g" path="res://assets/pad-unpressed-dis.png" id="31_q6i0q"]
-[ext_resource type="AudioStream" uid="uid://c6o11g7kgc5ku" path="res://music/Music-Pad 1-5.ogg" id="32_megrg"]
-[ext_resource type="Script" path="res://script/synth1.gd" id="32_qttpi"]
-[ext_resource type="AudioStream" uid="uid://rtnoo7n7rddt" path="res://music/Music-Pad 2-6.ogg" id="33_pq7va"]
-[ext_resource type="Script" path="res://script/synth2.gd" id="34_kq4i4"]
-[ext_resource type="AudioStream" uid="uid://grfn4tpkeu4q" path="res://music/Music-Pad 3-7.ogg" id="34_t1724"]
-[ext_resource type="Script" path="res://script/synth3.gd" id="36_3e064"]
-[ext_resource type="Script" path="res://script/synth4.gd" id="38_r78pc"]
-[ext_resource type="Script" path="res://script/pad1.gd" id="44_1avv2"]
-[ext_resource type="Script" path="res://script/pad2.gd" id="46_0oq27"]
-[ext_resource type="Script" path="res://script/pad3.gd" id="48_x027g"]
-[ext_resource type="Script" path="res://script/pad4.gd" id="50_3jrfr"]
-[ext_resource type="AudioStream" uid="uid://dgq1a2hrhe6cl" path="res://music/Music-Pad-4-8.ogg" id="51_xdpg6"]
+[ext_resource type="Script" path="res://script/timing_and_animation.gd" id="1_uunvy"]
+[ext_resource type="Texture2D" uid="uid://dfmtehi6ola47" path="res://test-stuff/progressbar-test.png" id="2_qenla"]
+[ext_resource type="Texture2D" uid="uid://3rnahrj5px4j" path="res://assets/progressbar-fill.png" id="3_84t1o"]
+[ext_resource type="Texture2D" uid="uid://o5a4b2blu0sx" path="res://animations/dance1-sheet.png" id="4_5ux2r"]
+[ext_resource type="Texture2D" uid="uid://spr4tp8350dj" path="res://animations/dance2-sheet.png" id="5_q5n4a"]
+[ext_resource type="Texture2D" uid="uid://d0y2thmnfh406" path="res://animations/dance3-sheet.png" id="6_w8bkj"]
+[ext_resource type="Texture2D" uid="uid://s5t7d36vplwp" path="res://animations/dance4-sheet.png" id="7_y2q8h"]
+[ext_resource type="Texture2D" uid="uid://4sbawrkpmiql" path="res://animations/dancer-idle-sheet.png" id="8_4uy8p"]
+[ext_resource type="Texture2D" uid="uid://cqbow3fsjrxqk" path="res://assets/board.png" id="9_qe01g"]
+[ext_resource type="Script" path="res://script/board.gd" id="10_tl4ab"]
+[ext_resource type="Texture2D" uid="uid://d4ejom2fctjm7" path="res://assets/beat-unpressed.png" id="11_wyky0"]
+[ext_resource type="Texture2D" uid="uid://6srcf7vr7h2v" path="res://assets/beat-pressed.png" id="12_vwbko"]
+[ext_resource type="Texture2D" uid="uid://bmwngx1418bs8" path="res://assets/beat-unpressed-hov.png" id="13_7aj3a"]
+[ext_resource type="Texture2D" uid="uid://4pbdy6qwhf8k" path="res://assets/beat-unpressed-dis.png" id="14_lhld4"]
+[ext_resource type="Script" path="res://script/beat1.gd" id="15_vqfs3"]
+[ext_resource type="AudioStream" uid="uid://c620rsrk0ic1b" path="res://music/Music-Beat 1 -3.ogg" id="16_g1hxi"]
+[ext_resource type="Script" path="res://script/beat2.gd" id="17_diems"]
+[ext_resource type="AudioStream" uid="uid://cy280c1i5xxfj" path="res://music/Music-Beat 2 -4.ogg" id="18_p64vm"]
+[ext_resource type="Script" path="res://script/beat3.gd" id="19_livm0"]
+[ext_resource type="AudioStream" uid="uid://danpcbgpjx2m1" path="res://music/Music-Beat 3-2.ogg" id="20_g0d14"]
+[ext_resource type="Script" path="res://script/beat4.gd" id="21_ljvim"]
+[ext_resource type="AudioStream" uid="uid://cnh8dh2x1atws" path="res://music/Music-Beat 4-1.ogg" id="22_krrxm"]
+[ext_resource type="Texture2D" uid="uid://b1fp6ayulcrkh" path="res://assets/bass-unpressed.png" id="23_1ept0"]
+[ext_resource type="Texture2D" uid="uid://br7emfip3fgxr" path="res://assets/bass-pressed.png" id="24_7ohoa"]
+[ext_resource type="Texture2D" uid="uid://kjwhw1mvq8lb" path="res://assets/bass-unpressed-hov.png" id="25_b6fm8"]
+[ext_resource type="Texture2D" uid="uid://dyw038pw2eca4" path="res://assets/bass-unpressed-dis.png" id="26_vfpmq"]
+[ext_resource type="Script" path="res://script/bass1.gd" id="27_i6pv7"]
+[ext_resource type="AudioStream" uid="uid://bd0mmh36d4g3d" path="res://music/Music-Bass 1-9.ogg" id="28_kmitl"]
+[ext_resource type="Script" path="res://script/bass2.gd" id="29_hn7cy"]
+[ext_resource type="AudioStream" uid="uid://hxwb7esxmpas" path="res://music/Music-Bass 2-10.ogg" id="30_0itbt"]
+[ext_resource type="Script" path="res://script/bass3.gd" id="31_nqkxg"]
+[ext_resource type="AudioStream" uid="uid://cyta0a3d4woy0" path="res://music/Music-Bass 3-11.ogg" id="32_qcrom"]
+[ext_resource type="Script" path="res://script/bass4.gd" id="33_t4bsd"]
+[ext_resource type="AudioStream" uid="uid://cei24ilxex4it" path="res://music/Music-Bass 4-12.ogg" id="34_rn104"]
+[ext_resource type="Texture2D" uid="uid://bjkdr61o07jm8" path="res://assets/synth-unpressed.png" id="35_nlxot"]
+[ext_resource type="Texture2D" uid="uid://bkhdkw6tmfrnx" path="res://assets/synth-pressed.png" id="36_qmdl2"]
+[ext_resource type="Texture2D" uid="uid://boeg2wqwx6iup" path="res://assets/synth-unpressed-hov.png" id="37_1cqr3"]
+[ext_resource type="Texture2D" uid="uid://4nn02dh40nmg" path="res://assets/synth-unpressed-dis.png" id="38_cgmd8"]
+[ext_resource type="Script" path="res://script/synth1.gd" id="39_q3011"]
+[ext_resource type="AudioStream" uid="uid://cchgt1i6l5w08" path="res://music/Music-Synth 1-13.ogg" id="40_vdxwl"]
+[ext_resource type="Script" path="res://script/synth2.gd" id="41_7eojb"]
+[ext_resource type="AudioStream" uid="uid://cs25qyuqlu1eb" path="res://music/Music-Synth 2-14.ogg" id="42_plje3"]
+[ext_resource type="Script" path="res://script/synth3.gd" id="43_hwiwc"]
+[ext_resource type="AudioStream" uid="uid://db0ef6txpwe3m" path="res://music/Music-Synth 3-15.ogg" id="44_kl73v"]
+[ext_resource type="Script" path="res://script/synth4.gd" id="45_8bp6k"]
+[ext_resource type="AudioStream" uid="uid://ec7gy7pk83s" path="res://music/Music-Synth 4-16.ogg" id="46_g1h78"]
+[ext_resource type="Texture2D" uid="uid://dyilg1e0y3qe0" path="res://assets/pad-unpressed.png" id="47_2b67b"]
+[ext_resource type="Texture2D" uid="uid://1vo6irgx1w10" path="res://assets/pad-pressed.png" id="48_o5md0"]
+[ext_resource type="Texture2D" uid="uid://djqnqxwerscdh" path="res://assets/pad-unpressed-hov.png" id="49_j2j10"]
+[ext_resource type="Texture2D" uid="uid://dnhd2v6sog01g" path="res://assets/pad-unpressed-dis.png" id="50_b0i0h"]
+[ext_resource type="Script" path="res://script/pad1.gd" id="51_7cee5"]
+[ext_resource type="AudioStream" uid="uid://c6o11g7kgc5ku" path="res://music/Music-Pad 1-5.ogg" id="52_a8lhr"]
+[ext_resource type="Script" path="res://script/pad2.gd" id="53_26xxu"]
+[ext_resource type="AudioStream" uid="uid://rtnoo7n7rddt" path="res://music/Music-Pad 2-6.ogg" id="54_34itf"]
+[ext_resource type="Script" path="res://script/pad3.gd" id="55_d3ybd"]
+[ext_resource type="AudioStream" uid="uid://grfn4tpkeu4q" path="res://music/Music-Pad 3-7.ogg" id="56_35ulu"]
+[ext_resource type="Script" path="res://script/pad4.gd" id="57_8wexv"]
+[ext_resource type="AudioStream" uid="uid://dgq1a2hrhe6cl" path="res://music/Music-Pad-4-8.ogg" id="58_wyb5n"]
+[ext_resource type="Texture2D" uid="uid://c6582lroic0en" path="res://assets/grabber.png" id="59_cop0c"]
+[ext_resource type="Texture2D" uid="uid://efsp5mh7lrgb" path="res://assets/grabber-hov.png" id="60_bswda"]
+[ext_resource type="Script" path="res://script/volume_slider.gd" id="61_oqegf"]
+[ext_resource type="Texture2D" uid="uid://p2asa6bc0dv2" path="res://assets/volume.png" id="62_l6l7r"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d83cm"]
-texture = ExtResource("12_v6ngg")
+texture = ExtResource("2_qenla")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpvoa"]
-texture = ExtResource("13_v4spy")
+texture = ExtResource("3_84t1o")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bk87"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(0, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wndnk"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(200, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sh30a"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(400, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uub7l"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(600, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gbeq7"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(800, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ygioq"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(1000, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t241j"]
-atlas = ExtResource("4_8fu25")
+atlas = ExtResource("4_5ux2r")
 region = Rect2(1200, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tmj4e"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(0, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gjo0a"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1uvk"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5cfcu"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7b1d8"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(1200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_us4dp"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(1500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hy1ow"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(1800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ec0ia"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(2100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36bcu"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(2400, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcdhm"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(2700, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ort8r"]
-atlas = ExtResource("5_vvqpg")
+atlas = ExtResource("5_q5n4a")
 region = Rect2(3000, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a14n8"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(0, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x81j6"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_craiv"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vl0dg"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8qt4c"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(1200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_esm5g"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(1500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aod6o"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(1800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vahcx"]
-atlas = ExtResource("6_7gp3y")
+atlas = ExtResource("6_w8bkj")
 region = Rect2(2100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4tuyo"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(0, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b5e42"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_msgwp"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1vja4"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v2hph"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(1200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3rbs"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(1500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1pq6v"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(1800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g37xe"]
-atlas = ExtResource("7_pstxv")
+atlas = ExtResource("7_y2q8h")
 region = Rect2(2100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5c3vm"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(0, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_anplg"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lthi3"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e0ds"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vht6"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(1200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ehpsp"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(1500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2j10e"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(1800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x33q2"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(2100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lme4i"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(2400, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j57gf"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(2700, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abhbu"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(3000, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8icoo"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(3300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4beon"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(3600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t3auw"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(3900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n0a8r"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(4200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4vwar"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(4500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqi4s"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(4800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_61tiu"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(5100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0ohh"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(5400, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dygr"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(5700, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_07435"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(6000, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycqf7"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(6300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_834xj"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(6600, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n0c1f"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(6900, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4651f"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(7200, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3mx0i"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(7500, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0m5ic"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(7800, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kiwfq"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(8100, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eu4iv"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(8400, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_clvfe"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(8700, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_60tp3"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(9000, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ot2mo"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(9300, 0, 300, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m62i3"]
-atlas = ExtResource("5_jkha2")
+atlas = ExtResource("8_4uy8p")
 region = Rect2(9600, 0, 300, 300)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nxv5b"]
@@ -582,7 +582,7 @@ offset_left = 2.0
 offset_top = -1.0
 offset_right = 2.0
 offset_bottom = -1.0
-script = ExtResource("1_picyf")
+script = ExtResource("1_uunvy")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 layout_mode = 0
@@ -662,7 +662,7 @@ offset_left = 236.0
 offset_top = 100.0
 offset_right = 936.0
 offset_bottom = 643.0
-texture = ExtResource("1_yccf3")
+texture = ExtResource("9_qe01g")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
@@ -673,215 +673,215 @@ offset_bottom = 697.0
 theme_override_constants/h_separation = -1
 theme_override_constants/v_separation = -1
 columns = 4
-script = ExtResource("1_u7c8n")
+script = ExtResource("10_tl4ab")
 
 [node name="Beat 1" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("4_hwumr")
-texture_pressed = ExtResource("5_7f74m")
-texture_hover = ExtResource("6_2mg4b")
-texture_disabled = ExtResource("7_kbk2v")
-script = ExtResource("8_f4de5")
+texture_normal = ExtResource("11_wyky0")
+texture_pressed = ExtResource("12_vwbko")
+texture_hover = ExtResource("13_7aj3a")
+texture_disabled = ExtResource("14_lhld4")
+script = ExtResource("15_vqfs3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-beat1-3" type="AudioStreamPlayer" parent="GridContainer/Beat 1"]
-stream = ExtResource("8_fye0u")
+stream = ExtResource("16_g1hxi")
 
 [node name="Beat 2" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("4_hwumr")
-texture_pressed = ExtResource("5_7f74m")
-texture_hover = ExtResource("6_2mg4b")
-texture_disabled = ExtResource("7_kbk2v")
-script = ExtResource("10_2thb1")
+texture_normal = ExtResource("11_wyky0")
+texture_pressed = ExtResource("12_vwbko")
+texture_hover = ExtResource("13_7aj3a")
+texture_disabled = ExtResource("14_lhld4")
+script = ExtResource("17_diems")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-beat2-4" type="AudioStreamPlayer" parent="GridContainer/Beat 2"]
-stream = ExtResource("9_bwcak")
+stream = ExtResource("18_p64vm")
 
 [node name="Beat 3" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("4_hwumr")
-texture_pressed = ExtResource("5_7f74m")
-texture_hover = ExtResource("6_2mg4b")
-texture_disabled = ExtResource("7_kbk2v")
-script = ExtResource("12_idwuk")
+texture_normal = ExtResource("11_wyky0")
+texture_pressed = ExtResource("12_vwbko")
+texture_hover = ExtResource("13_7aj3a")
+texture_disabled = ExtResource("14_lhld4")
+script = ExtResource("19_livm0")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-beat3-2" type="AudioStreamPlayer" parent="GridContainer/Beat 3"]
-stream = ExtResource("10_xaasw")
+stream = ExtResource("20_g0d14")
 
 [node name="Beat 4" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("4_hwumr")
-texture_pressed = ExtResource("5_7f74m")
-texture_hover = ExtResource("6_2mg4b")
-texture_disabled = ExtResource("7_kbk2v")
-script = ExtResource("14_an2kt")
+texture_normal = ExtResource("11_wyky0")
+texture_pressed = ExtResource("12_vwbko")
+texture_hover = ExtResource("13_7aj3a")
+texture_disabled = ExtResource("14_lhld4")
+script = ExtResource("21_ljvim")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-beat4-1" type="AudioStreamPlayer" parent="GridContainer/Beat 4"]
-stream = ExtResource("11_qv67t")
+stream = ExtResource("22_krrxm")
 
 [node name="Bass 1" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("12_ocs8n")
-texture_pressed = ExtResource("13_uac2f")
-texture_hover = ExtResource("14_8jmwx")
-texture_disabled = ExtResource("15_23440")
-script = ExtResource("20_ukylk")
+texture_normal = ExtResource("23_1ept0")
+texture_pressed = ExtResource("24_7ohoa")
+texture_hover = ExtResource("25_b6fm8")
+texture_disabled = ExtResource("26_vfpmq")
+script = ExtResource("27_i6pv7")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-bass1-9" type="AudioStreamPlayer" parent="GridContainer/Bass 1"]
-stream = ExtResource("16_31x2p")
+stream = ExtResource("28_kmitl")
 
 [node name="Bass 2" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("12_ocs8n")
-texture_pressed = ExtResource("13_uac2f")
-texture_hover = ExtResource("14_8jmwx")
-texture_disabled = ExtResource("15_23440")
-script = ExtResource("22_istnb")
+texture_normal = ExtResource("23_1ept0")
+texture_pressed = ExtResource("24_7ohoa")
+texture_hover = ExtResource("25_b6fm8")
+texture_disabled = ExtResource("26_vfpmq")
+script = ExtResource("29_hn7cy")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-bass2-10" type="AudioStreamPlayer" parent="GridContainer/Bass 2"]
-stream = ExtResource("17_ba1vg")
+stream = ExtResource("30_0itbt")
 
 [node name="Bass 3" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("12_ocs8n")
-texture_pressed = ExtResource("13_uac2f")
-texture_hover = ExtResource("14_8jmwx")
-texture_disabled = ExtResource("15_23440")
-script = ExtResource("24_e26fd")
+texture_normal = ExtResource("23_1ept0")
+texture_pressed = ExtResource("24_7ohoa")
+texture_hover = ExtResource("25_b6fm8")
+texture_disabled = ExtResource("26_vfpmq")
+script = ExtResource("31_nqkxg")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-bass3-11" type="AudioStreamPlayer" parent="GridContainer/Bass 3"]
-stream = ExtResource("18_txy7h")
+stream = ExtResource("32_qcrom")
 
 [node name="Bass 4" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("12_ocs8n")
-texture_pressed = ExtResource("13_uac2f")
-texture_hover = ExtResource("14_8jmwx")
-texture_disabled = ExtResource("15_23440")
-script = ExtResource("26_36oko")
+texture_normal = ExtResource("23_1ept0")
+texture_pressed = ExtResource("24_7ohoa")
+texture_hover = ExtResource("25_b6fm8")
+texture_disabled = ExtResource("26_vfpmq")
+script = ExtResource("33_t4bsd")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-bass4-12" type="AudioStreamPlayer" parent="GridContainer/Bass 4"]
-stream = ExtResource("19_qynwc")
+stream = ExtResource("34_rn104")
 
 [node name="Synth 1" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("20_0ltmo")
-texture_pressed = ExtResource("21_j7vev")
-texture_hover = ExtResource("22_vvweu")
-texture_disabled = ExtResource("23_i3yyp")
-script = ExtResource("32_qttpi")
+texture_normal = ExtResource("35_nlxot")
+texture_pressed = ExtResource("36_qmdl2")
+texture_hover = ExtResource("37_1cqr3")
+texture_disabled = ExtResource("38_cgmd8")
+script = ExtResource("39_q3011")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-synth1-13" type="AudioStreamPlayer" parent="GridContainer/Synth 1"]
-stream = ExtResource("24_mg1l6")
+stream = ExtResource("40_vdxwl")
 
 [node name="Synth 2" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("20_0ltmo")
-texture_pressed = ExtResource("21_j7vev")
-texture_hover = ExtResource("22_vvweu")
-texture_disabled = ExtResource("23_i3yyp")
-script = ExtResource("34_kq4i4")
+texture_normal = ExtResource("35_nlxot")
+texture_pressed = ExtResource("36_qmdl2")
+texture_hover = ExtResource("37_1cqr3")
+texture_disabled = ExtResource("38_cgmd8")
+script = ExtResource("41_7eojb")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-synth2-14" type="AudioStreamPlayer" parent="GridContainer/Synth 2"]
-stream = ExtResource("25_6l6eu")
+stream = ExtResource("42_plje3")
 
 [node name="Synth 3" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("20_0ltmo")
-texture_pressed = ExtResource("21_j7vev")
-texture_hover = ExtResource("22_vvweu")
-texture_disabled = ExtResource("23_i3yyp")
-script = ExtResource("36_3e064")
+texture_normal = ExtResource("35_nlxot")
+texture_pressed = ExtResource("36_qmdl2")
+texture_hover = ExtResource("37_1cqr3")
+texture_disabled = ExtResource("38_cgmd8")
+script = ExtResource("43_hwiwc")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-synth3-15" type="AudioStreamPlayer" parent="GridContainer/Synth 3"]
-stream = ExtResource("26_lg2uc")
+stream = ExtResource("44_kl73v")
 
 [node name="Synth 4" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("20_0ltmo")
-texture_pressed = ExtResource("21_j7vev")
-texture_hover = ExtResource("22_vvweu")
-texture_disabled = ExtResource("23_i3yyp")
-script = ExtResource("38_r78pc")
+texture_normal = ExtResource("35_nlxot")
+texture_pressed = ExtResource("36_qmdl2")
+texture_hover = ExtResource("37_1cqr3")
+texture_disabled = ExtResource("38_cgmd8")
+script = ExtResource("45_8bp6k")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-synth4-16" type="AudioStreamPlayer" parent="GridContainer/Synth 4"]
-stream = ExtResource("27_yotx6")
+stream = ExtResource("46_g1h78")
 
 [node name="Pad 1" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("28_lo2dk")
-texture_pressed = ExtResource("29_4j6p1")
-texture_hover = ExtResource("30_isu8d")
-texture_disabled = ExtResource("31_q6i0q")
-script = ExtResource("44_1avv2")
+texture_normal = ExtResource("47_2b67b")
+texture_pressed = ExtResource("48_o5md0")
+texture_hover = ExtResource("49_j2j10")
+texture_disabled = ExtResource("50_b0i0h")
+script = ExtResource("51_7cee5")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-pad1-5" type="AudioStreamPlayer" parent="GridContainer/Pad 1"]
-stream = ExtResource("32_megrg")
+stream = ExtResource("52_a8lhr")
 
 [node name="Pad 2" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("28_lo2dk")
-texture_pressed = ExtResource("29_4j6p1")
-texture_hover = ExtResource("30_isu8d")
-texture_disabled = ExtResource("31_q6i0q")
-script = ExtResource("46_0oq27")
+texture_normal = ExtResource("47_2b67b")
+texture_pressed = ExtResource("48_o5md0")
+texture_hover = ExtResource("49_j2j10")
+texture_disabled = ExtResource("50_b0i0h")
+script = ExtResource("53_26xxu")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-pad2-6" type="AudioStreamPlayer" parent="GridContainer/Pad 2"]
-stream = ExtResource("33_pq7va")
+stream = ExtResource("54_34itf")
 
 [node name="Pad 3" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("28_lo2dk")
-texture_pressed = ExtResource("29_4j6p1")
-texture_hover = ExtResource("30_isu8d")
-texture_disabled = ExtResource("31_q6i0q")
-script = ExtResource("48_x027g")
+texture_normal = ExtResource("47_2b67b")
+texture_pressed = ExtResource("48_o5md0")
+texture_hover = ExtResource("49_j2j10")
+texture_disabled = ExtResource("50_b0i0h")
+script = ExtResource("55_d3ybd")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-pad3-7" type="AudioStreamPlayer" parent="GridContainer/Pad 3"]
-stream = ExtResource("34_t1724")
+stream = ExtResource("56_35ulu")
 
 [node name="Pad 4" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 keep_pressed_outside = true
-texture_normal = ExtResource("28_lo2dk")
-texture_pressed = ExtResource("29_4j6p1")
-texture_hover = ExtResource("30_isu8d")
-texture_disabled = ExtResource("31_q6i0q")
-script = ExtResource("50_3jrfr")
+texture_normal = ExtResource("47_2b67b")
+texture_pressed = ExtResource("48_o5md0")
+texture_hover = ExtResource("49_j2j10")
+texture_disabled = ExtResource("50_b0i0h")
+script = ExtResource("57_8wexv")
 metadata/_edit_use_anchors_ = true
 
 [node name="Music-pad-4-8" type="AudioStreamPlayer" parent="GridContainer/Pad 4"]
-stream = ExtResource("51_xdpg6")
+stream = ExtResource("58_wyb5n")
 
 [node name="VSlider" type="VSlider" parent="."]
 layout_mode = 0
@@ -889,8 +889,8 @@ offset_left = 798.0
 offset_top = 137.0
 offset_right = 842.0
 offset_bottom = 582.0
-theme_override_icons/grabber = ExtResource("18_gq6md")
-theme_override_icons/grabber_highlight = ExtResource("19_x8p46")
+theme_override_icons/grabber = ExtResource("59_cop0c")
+theme_override_icons/grabber_highlight = ExtResource("60_bswda")
 theme_override_styles/slider = SubResource("StyleBoxEmpty_gr5w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_0gq48")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_txarv")
@@ -898,7 +898,7 @@ min_value = 1.0
 max_value = 2.0
 step = 0.1
 value = 1.0
-script = ExtResource("5_hmhr5")
+script = ExtResource("61_oqegf")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
@@ -906,7 +906,7 @@ offset_left = 799.0
 offset_top = 585.0
 offset_right = 838.0
 offset_bottom = 618.0
-texture = ExtResource("21_hob1n")
+texture = ExtResource("62_l6l7r")
 
 [connection signal="ready" from="ProgressBar" to="Timer_Beat" method="_ready"]
 [connection signal="ready" from="ProgressBar2" to="." method="_ready"]
