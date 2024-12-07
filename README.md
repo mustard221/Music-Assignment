@@ -63,5 +63,8 @@ On the right side, there is a volume slider. You can slide it up and down to low
 
 
 Video demonstration:
-
 https://youtu.be/sJD36G6wlFQ
+
+
+Assets made with Aseprite
+Music made with Cakewalk/Bandlab
