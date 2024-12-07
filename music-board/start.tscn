@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://br48e7aewgrl4"]
+[gd_scene load_steps=9 format=3 uid="uid://br48e7aewgrl4"]
 
 [ext_resource type="PackedScene" uid="uid://cu3c6r34p17j5" path="res://animations/bg_animation.tscn" id="1_jdyu0"]
 [ext_resource type="Texture2D" uid="uid://cessotqvsmpse" path="res://assets/play-unpressed.png" id="2_jkvdb"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c2bv0bvtj0li1" path="res://assets/play-pressed.png" id="3_p7cjx"]
 [ext_resource type="Texture2D" uid="uid://8574a6ekrdp6" path="res://assets/play-unpressed-hov.png" id="4_0vm3g"]
 [ext_resource type="AudioStream" uid="uid://d2gn4kdjed5p0" path="res://music/Start_Screen.ogg" id="5_j0eqy"]
+[ext_resource type="Texture2D" uid="uid://cnds3lyx1cvav" path="res://assets/Title.png" id="7_545db"]
 
 [sub_resource type="GDScript" id="GDScript_7tlss"]
 script/source = "extends Control
@@ -23,26 +24,37 @@ layout_mode = 3
 anchors_preset = 0
 script = SubResource("GDScript_7tlss")
 
+[node name="bg" parent="." instance=ExtResource("1_jdyu0")]
+position = Vector2(114, 154)
+scale = Vector2(0.8, 0.8)
+
 [node name="StartScreen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_j0eqy")
 autoplay = true
 bus = &"Start Screen"
 parameters/looping = true
 
-[node name="bg" parent="." instance=ExtResource("1_jdyu0")]
-
 [node name="Button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 263.0
-offset_top = 99.0
-offset_right = 863.0
-offset_bottom = 411.0
+offset_left = 234.0
+offset_top = 198.0
+offset_right = 834.0
+offset_bottom = 510.0
+scale = Vector2(0.9, 0.9)
 pivot_offset = Vector2(649, 205)
 texture_normal = ExtResource("2_jkvdb")
 texture_pressed = ExtResource("3_p7cjx")
 texture_hover = ExtResource("4_0vm3g")
 
 [node name="character" parent="." instance=ExtResource("2_yp8oi")]
-position = Vector2(-24, 120)
+position = Vector2(-23, 189)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = -14.0
+offset_right = 1079.0
+offset_bottom = 782.0
+texture = ExtResource("7_545db")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
